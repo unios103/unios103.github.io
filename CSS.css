@@ -10,6 +10,20 @@ body{
     background: -webkit-linear-gradient(left, #FFF 70%,#FFD5EC	);
     background: linear-gradient(to right,  #FFF 70%,#FFD5EC	);
 }
+.remake{    
+    font-size:100px;
+    position: fixed;
+    margin: 50vh auto 0;
+    transform: translateY(-65%);
+    text-align: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.726);
+}
+.inner{
+    color:rgb(255, 0, 106);
+    text-shadow: 0 0 10px #f15858;
+    transform: rotate(30deg);
+}
 header{
     position: fixed;
     top: 0px;
