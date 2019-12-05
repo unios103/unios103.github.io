@@ -1,5 +1,5 @@
-(function($){
-    // ここにコードを記述
+jQuery(document).ready(function($){ 
+　　jQuery(document).ready(function(){
     $('.page-header').each(function(){
         var $window=$(window),
             $header=$(this),
@@ -12,5 +12,6 @@
             }
         });
         $window.trigger('scroll');
-    });
-})(jQuery);
+    });　　
+　　});
+})
