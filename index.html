@@ -3,69 +3,66 @@
     <head>
         <meta charset="utf-8">
         <title>Profile</title>
-        <link rel="stylesheet" href="CSS.css">
+        <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="rCSS.css">
         <link href="https://fonts.googleapis.com/earlyaccess/nikukyu.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Kite+One&display=swap" rel="stylesheet">
-        <script src="js_sample.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script type="text/javascript" src="./main.js"></script>
         <meta property="og:locale" content="ja_JP" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Profile" />
         <meta property="og:description" content="unios103の自己紹介" />
         <meta property="og:url" content="https://unios103.github.io/" />
-        <meta property="og:image" content="IMG_3606.jpg" />
-        <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:image" content="./IMG_3606.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@unios103" />
+        <meta name="twitter:creator" content="@unios103" />
     </head>
     <body>
-        <div class="remake"><h1 class="inner">工事中!!!</h1></div>
-            <header>
-                <div class="list">
-                    <a href="./index.html">Home</a>
-                    <a href="./Gallery2.html">Gallery</a>
-                </div>
-            </header>
-        <div class="profile">
-            <section>
-                <h1>Profile</h1>
-            </section>
-            <div class="icon">
-                <img src="IMG_3606.jpg">
-            </div>
-            <div class ="pro">
-            <p class="top">☆名前☆</p>
-            <p class="top">☆学校☆</p>
-            <p class="top">☆学年☆</p>
-            <p class="top">☆色々☆</p>
-            </div>
+        <div class="top">
+            <div class="inner" id="unios"><br></div>
         </div>
-        <div class="pro2">
-            <p><a href="https://twitter.com/unios103">unios103</a></p>
-            <p>ナイショ</p>
-            <p>1年生 <a href="https://twitter.com/hashtag/kosen19s?src=hashtag_click">#kosen19s</a></p>
-            <p>お絵かきします</p>
-            <p>プログラミング初心者</p>
-            <p>一応できるよ↓</p>
-            <p>ピアノ、ホルン、篠笛、和太鼓</p>
-        </div>    
-        <div class="study">
-                <p class="obenn"><span>↓プログラミングのおべんきょ↓</span></p>
-                <p class="language">C++</p>
-                <p>最初に勉強した言語。競プロしかしたことない!!これしかできない!!</p>
-                <p class="language">Unity?C#?jQuery??Python???         <span>now????</span></p>
-                <p>C#でも競プロしたいな(今はテスト勉強する...)</p>
-        </div>
-        <p id="time" class="nowtime"></p>
-        <div class="end">
-            <p>thank you for reading!</p>
-        </div>
-        <footer>
-            <p>&copy;2019 unios103</p>
+        <header class="page-header" role="banner">
             <div class="twit">
-                <a href="https://github.com/unios103"><img src="GitHub.jpg"></a>
-                <a href="https://twitter.com/unios103"><img src="Twitter.jpg"></a>
+                <a href="https://github.com/unios103"><img src="./GitHub.png"></a>
+                <a href="https://twitter.com/unios103"><img src="./Twitter.png"></a>
             </div>
-        </footer>
+            <small>&copy;2019 unios103</small>
+        </header>
+        <div class="profile"><br><br><br>
+            <div class="out">
+                <h2 class="inn">Profile</h2>
+            </div>
+            <img src="IMG_3606.jpg" class="my icon">
+            <div class="pro2"><br>
+                <p><span>name : </span><a href="https://twitter.com/unios103">unios103</a></p><br>
+                <p><span>school : </span>ナイショ</p><br>
+                <p><span>grade : </span>1年生 <a href="https://twitter.com/hashtag/kosen19s?src=hashtag_click">#kosen19s</a></p><br>
+                <p class="b">my hobby ↓ <br></p>
+                <p>お絵かき、プログラミング、</p>
+                <p>ピアノ、ホルン、篠笛、和太鼓</p><br>
+                <p>C++,HTML/CSS,JS,Unity/C#とか</p>
+            </div>
+        </div>
+        <br>
+        <div class="pic">
+            <div class="out">
+                <h2 class="inn">Gallery</h2>
+            </div>
+            <a href="./" class="slide"><img src="./IMG_3592.JPG" alt="[Get Picture]" class="my"></a>
+            <a href="./" class="slide"><img src="./IMG_4358.jpg" alt="[Get Picture]" class="my"></a>
+            <a href="./" class="slide"><img src="./IMG_4181.JPG" alt="[Get Picture]" class="my"></a>
+            <a href="./" class="slide"><img src="./img.jpeg" alt="[Get Picture]" class="my"></a>
+            <a href="./" class="slide"><img src="./img3-1.png" alt="[Get Picture]" class="my"></a>
+            <a href="./" class="slide"><img src="./img4-1.png" alt="[Get Picture]" class="my"></a>
+            <a href="./" class="slide"><img src="./IMG_3869.JPG" alt="[Get Picture]" class="my"></a>
+            <a href="./" class="slide"><img src="./IMG_3867.JPG" alt="[Get Picture]" class="my"></a>
+            <a href="./" class="slide"><img src="./IMG_3872.JPG" alt="[Get Picture]" class="my"></a>
+            <a href="./" class="slide"><img src="./IMG_3914.JPG" alt="[Get Picture]" class="my"></a>
+        </div>
     </body>
 </html>
