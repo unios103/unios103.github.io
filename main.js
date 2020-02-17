@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){ 
-　　jQuery(document).ready(function(){
+  jQuery(document).ready(function(){
     $('.page-header').each(function(){
         var $window=$(window),
             $header=$(this),
@@ -12,6 +12,6 @@ jQuery(document).ready(function($){
             }
         });
         $window.trigger('scroll');
-    });　　
-　　});
+    });
+  });
 })
