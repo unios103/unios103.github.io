@@ -1,0 +1,27 @@
+@import "rCss.css";
+
+html {
+  background-color: #fafafa;
+  color: #000;
+  position: relative;
+}
+span {
+  color: #3c485c;
+}
+h2 {
+  font-size: 1.5rem;
+}
+.title {
+  color: #000;
+  font-family: "M PLUS 1p";
+  font-size: 40px;
+}
+.e_title {
+  font-family: "Wire One", sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: bolder;
+}
+header {
+  padding: 0.7rem;
+  position: absolute;
+}
