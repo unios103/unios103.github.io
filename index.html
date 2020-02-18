@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
     <title>Profile</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0"
+    />
     <link rel="shortcut icon" href="./img/unios103.jpeg" type="image/png" />
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link type="text/css" rel="stylesheet" href="css/header.css" />
     <link
       href="https://fonts.googleapis.com/css?family=M+PLUS+1p"
       rel="stylesheet"
@@ -17,10 +21,6 @@
       href="https://fonts.googleapis.com/css?family=Wire+One&display=swap"
       rel="stylesheet"
     />
-    <script
-      type="text/javascript"
-      src="https://unios103.github.io/main.js"
-    ></script>
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@unios103" />
     <meta name="twitter:creator" content="@unios103" />
@@ -29,16 +29,26 @@
     <meta property="og:title" content="Profile" />
     <meta property="og:description" content="unios103の自己紹介" />
     <meta property="og:url" content="https://unios103.github.io/" />
-    <meta property="og:image" content="./IMG_3606.jpg" />
+    <!-- !!! -->
+    <meta property="og:image" content="./img/unios103.jpg" />
   </head>
   <body>
     <header>
-      <h2 class="e_title">SELF-INTRODUCTION</h2>
-      <span class="e_title">&copy;2020 unios103</span>
+      <div>
+        <div class="header_font" id="e_title">
+          <h2 class="e_title">SELF-INTRODUCTION</h2>
+          <span class="e_title">&copy;2020 unios103</span>
+        </div>
+      </div>
+      <div class="header_canvas">
+        <canvas id="menu" class="menu"></canvas>
+      </div>
     </header>
-    <h1 class="title">
+    <!-- <h1 class="title">
       ゆにちゃんのぽーと<span>ふ</span>ぉりお（？）
     </h1>
-    <canvas></canvas>
+    <canvas></canvas> -->
+    <script type="text/javascript" src="./js/function/canvas_size.js"></script>
+    <script type="text/javascript" src="./js/header.js"></script>
   </body>
 </html>

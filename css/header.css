@@ -1,0 +1,56 @@
+@import "rCss.css";
+
+html {
+  position: relative;
+  background-color: #fafafa;
+  font-size: 20px;
+  color: #000;
+}
+.header_font > h2 {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+}
+.header_font > span {
+  font-size: 0.7rem;
+  color: #3c485c;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  /* widthの指定のサイズにpaddingも入れる */
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  padding-top: 0.9rem;
+  padding-left: 1.1rem;
+  line-height: 0.8rem;
+}
+.header_canvas {
+  padding-right: 1.3rem;
+}
+.title {
+  font-family: "M PLUS 1p";
+  color: #000;
+}
+.e_title {
+  font-family: "Wire One", sans-serif;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 500px) {
+  .header_font > h2 {
+    font-size: 0.9rem;
+  }
+  .header_font > span {
+    font-size: 0.4rem;
+    color: #3c485c;
+  }
+  header {
+    line-height: 0.45rem;
+    padding-top: 0.45rem;
+    padding-left: 0.6rem;
+  }
+  .header_canvas {
+    padding-right: 1rem;
+  }
+}
