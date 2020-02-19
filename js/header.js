@@ -9,10 +9,10 @@ function loop() {
 
 // 弁当メニュー（？）の切替
 function draw() {
-  if (!canvas || !canvas.getContext) {
+  if (!canvas1 || !canvas1.getContext) {
     return false;
   }
-  cvs.clearRect(0, 0, wid, wid);
+  cvs1.clearRect(0, 0, wid, wid);
   speed += 0.4;
   rotate += speed;
   if (click_flag) {

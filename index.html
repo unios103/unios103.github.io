@@ -33,25 +33,40 @@
     <meta property="og:image" content="./img/unios103.jpg" />
   </head>
   <body>
-    <header>
-      <div>
-        <div class="header_font" id="e_title">
-          <h2 class="e_title">SELF-INTRODUCTION</h2>
-          <span class="e_title">&copy;2020 unios103</span>
+    <div id="body_div">
+      <!-- MAKE: 文字ふらしと、カーソルの軌道
+      <canvas id="background"></canvas>
+    -->
+      <header id="header">
+        <div class="header_div">
+          <div class="header_font" id="e_title">
+            <h2 class="e_title">SELF-INTRODUCTION</h2>
+            <span class="e_title">&copy;2020 unios103</span>
+          </div>
         </div>
-      </div>
-      <div class="header_canvas">
-        <button onclick="button_click()">
-          <canvas id="menu" class="menu"></canvas>
-        </button>
-      </div>
-    </header>
-    <!-- <h1 class="title">
+        <div class="header_canvas">
+          <button onclick="button_click()">
+            <canvas id="menu" class="menu"></canvas>
+          </button>
+        </div>
+      </header>
+      <div id="header_bottom_padding" class="header_bottom"></div>
+      <!-- <h1 class="title">
       ゆにちゃんのぽーと<span>ふ</span>ぉりお（？）
-    </h1>
-    <canvas></canvas> -->
+    </h1> -->
+      <!-- MAKE: ホーム画面作る
+      MAKE: メニューを作る
+    -->
+      <div class="home" id="home_parents">
+        <canvas id="cvs_home"></canvas>
+      </div>
+      <!-- TODO: 確認が終わったら消す -->
+      <div style="height: 300px;"></div>
+      <!-- MAKE: ポートフォリオの内容 -->
+    </div>
     <script type="text/javascript" src="js/function/variable.js"></script>
     <script type="text/javascript" src="./js/function/function.js"></script>
     <script type="text/javascript" src="./js/header.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
   </body>
 </html>

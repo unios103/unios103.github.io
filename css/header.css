@@ -1,7 +1,6 @@
 @import "rCss.css";
 
 html {
-  position: relative;
   background-color: #fafafa;
   font-size: 20px;
   color: #000;
@@ -19,7 +18,8 @@ header {
   justify-content: space-between;
   /* widthの指定のサイズにpaddingも入れる */
   box-sizing: border-box;
-  position: absolute;
+  /* header固定 */
+  position: fixed;
   width: 100%;
   padding-top: 0.9rem;
   padding-left: 1.1rem;
@@ -35,6 +35,13 @@ header {
 .e_title {
   font-family: "Wire One", sans-serif;
   letter-spacing: 0.06em;
+}
+.header_bottom {
+  width: 100%;
+}
+.home {
+  position: relative;
+  width: 100%;
 }
 
 @media (max-width: 500px) {
