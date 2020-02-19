@@ -40,17 +40,18 @@ header {
 @media (max-width: 500px) {
   .header_font > h2 {
     font-size: 0.9rem;
+    line-height: 0.9rem;
   }
   .header_font > span {
     font-size: 0.4rem;
     color: #3c485c;
   }
   header {
-    line-height: 0.45rem;
+    line-height: 0.2rem;
     padding-top: 0.45rem;
     padding-left: 0.6rem;
   }
   .header_canvas {
-    padding-right: 1rem;
+    padding-right: 0.7rem;
   }
 }
