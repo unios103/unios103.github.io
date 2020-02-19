@@ -13,4 +13,34 @@ function canvas_function() {
     cvs.rotate(rad * rot);
     cvs.translate(-pos * 4, -pos * 4);
   };
+
+  this.f_rect = function(pos) {
+    for (let i = 0; i < 3; i++) {
+      let dot_pos = 2 * (i + 1) * pos - pos / 2;
+      cvs.fillRect(dot_pos, dot_pos, pos, pos);
+    }
+  };
+
+  this.click_flag_true = function(pos, rot) {
+    if (rot < 0) {
+      rot = 0;
+    }
+    if (rot >= 0 && rot < 90) {
+      func.rotation(rot - 90, pos);
+      for (let i = 0; i < 3; i++) {
+        let dot_pos = 2 * (i + 1) * pos - pos / 2;
+        cvs.fillRect(dot_pos, dot_pos, pos, pos);
+      }
+    }
+  };
+
+  this.click_flag_false = function(pos, rot) {
+    if (rot < 90) {
+      func.rotation(90 - rot, pos);
+      for (let i = 0; i < 3; i++) {
+        let dot_pos = 2 * (i + 1) * pos - pos / 2;
+        cvs.fillRect(dot_pos, dot_pos, pos, pos);
+      }
+    }
+  };
 }

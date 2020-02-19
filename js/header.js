@@ -1,14 +1,4 @@
-var rotate = 0,
-  sub_rot = 180,
-  not_first = false;
-
-function button_click() {
-  click_flag = !click_flag;
-  not_first = true;
-  rotate = 0;
-  sym_rot = 180;
-}
-
+// canvasの描画
 function loop() {
   requestAnimationFrame(loop);
   get_id();
@@ -17,45 +7,40 @@ function loop() {
   draw();
 }
 
+// 弁当メニュー（？）の切替
 function draw() {
   if (!canvas || !canvas.getContext) {
     return false;
   }
   cvs.clearRect(0, 0, wid, wid);
+  speed += 0.4;
+  rotate += speed;
   if (click_flag) {
     dot(rotate);
   } else {
-    rotate++;
     dot(rotate);
   }
 }
 
+// 弁当メニューの描画
 function dot(rot) {
   let position = wid / 8;
-  if (not_first) {
+  // ページを開いた時
+  if (open) {
+    func.f_rect(position);
+  } else {
     if (rot <= 180) {
+      // 基本グループ（ドット）の回転
       func.rotation(rot, position);
     }
-    f_rect(position);
-    symmetry(position, rot);
-  } else {
-    f_rect(position);
-  }
-}
-
-function f_rect(pos) {
-  for (let i = 0; i < 3; i++) {
-    let dot_pos = 2 * (i + 1) * pos - pos / 2;
-    cvs.fillRect(dot_pos, dot_pos, pos, pos);
-  }
-}
-
-function symmetry(pos, rot) {
-  if (rot < 90) {
-    func.rotation(90 - rot, pos);
-    for (let i = 0; i < 3; i++) {
-      let dot_pos = 2 * (i + 1) * pos - pos / 2;
-      cvs.fillRect(dot_pos, dot_pos, pos, pos);
+    // 基本グループ（ドット）の描画
+    func.f_rect(position);
+    if (click_flag) {
+      // /→×への変更
+      func.click_flag_true(position, (sub_rot -= speed));
+    } else {
+      // ×→/への変更
+      func.click_flag_false(position, rot);
     }
   }
 }
