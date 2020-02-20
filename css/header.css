@@ -5,6 +5,16 @@ html {
   font-size: 20px;
   color: #000;
 }
+body {
+  position: relative;
+}
+.trailing,
+.back {
+  /* position: absolute; */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 .header_font > h2 {
   font-size: 1.3rem;
   line-height: 1.3rem;
@@ -20,6 +30,7 @@ header {
   box-sizing: border-box;
   /* header固定 */
   position: fixed;
+  z-index: 100;
   width: 100%;
   padding-top: 0.9rem;
   padding-left: 1.1rem;
@@ -61,4 +72,8 @@ header {
   .header_canvas {
     padding-right: 0.7rem;
   }
+}
+
+.test {
+  background-color: aquamarine;
 }

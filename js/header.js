@@ -5,6 +5,8 @@ function loop() {
   func = new canvas_function();
   func.resize();
   draw();
+  // speed_func();
+  event_interval = 18;
 }
 
 // 弁当メニュー（？）の切替
@@ -29,7 +31,7 @@ function dot(rot) {
   if (open) {
     func.f_rect(position);
   } else {
-    if (rot <= 180) {
+    if (rot <= 360) {
       // 基本グループ（ドット）の回転
       func.rotation(rot, position);
     }
@@ -51,4 +53,10 @@ window.requestAnimFrame = (function() {
   };
 })();
 
+function speed_func() {
+  const startTime = performance.now(); // 開始時間
+  draw(); // 計測する処理
+  const endTime = performance.now(); // 終了時間
+  console.log(endTime - startTime); // 何ミリ秒かかったかを表示する
+}
 requestAnimFrame(loop);
