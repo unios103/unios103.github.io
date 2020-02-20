@@ -24,7 +24,8 @@ var header,
   speed = 1,
   mouse_pos_x,
   mouse_pos_y,
-  event_interval = 18;
+  trailing_flag = false;
+event_interval = 18;
 
 function get_id() {
   header = document.getElementById("header");

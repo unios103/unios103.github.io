@@ -6,25 +6,44 @@ function effect() {
   requestAnimationFrame(effect);
   func = new canvas_function();
   func.background_size();
-  ctx.fillStyle = "#FFF1";
+  ctx.fillStyle = "rgba(255,255,255,0.01)";
   ctx.fillRect(0, 0, window_size_w, window_size_h);
   draw_trailing();
-  // if (--event_interval == 0) {
-  //   speed_func();
-  //   event_interval = 18;
-  // }
+  // speed_func();
 }
 
 function draw_rain() {}
 
 function draw_trailing() {
   let ctx = cvs_trailing;
+  event();
+  if (trailing_flag) {
+    ctx.fillStyle = "#000";
+    ctx.fillRect(mouse_pos_x, mouse_pos_y, 10, 10);
+  }
+}
+
+function event() {
+  canvas_trailing.addEventListener(
+    "mouseout",
+    () => {
+      trailing_flag = false;
+    },
+    false
+  );
+  canvas_trailing.addEventListener(
+    "mouseover",
+    () => {
+      trailing_flag = true;
+    },
+    false
+  );
   if (--event_interval == 0) {
     canvas_trailing.addEventListener(
       "mousemove",
       e => {
-        mouse_pos_x = e.offsetX;
-        mouse_pos_y = e.offsetY;
+        mouse_pos_x = e.offsetX * devicePixelRatio;
+        mouse_pos_y = e.offsetY * devicePixelRatio;
       },
       false
     );
@@ -32,12 +51,12 @@ function draw_trailing() {
   }
 }
 
-// function speed_func() {
-//   const startTime = performance.now(); // 開始時間
-//   draw_trailing(); // 計測する処理
-//   const endTime = performance.now(); // 終了時間
-//   console.log(endTime - startTime); // 何ミリ秒かかったかを表示する
-// }
+function speed_func() {
+  const startTime = performance.now(); // 開始時間
+  draw_trailing(); // 計測する処理
+  const endTime = performance.now(); // 終了時間
+  console.log(endTime - startTime); // 何ミリ秒かかったかを表示する
+}
 
 window.requestAnimFrame = (function() {
   return function(callback) {

@@ -1,7 +1,7 @@
 @import "rCss.css";
 
 html {
-  background-color: #fafafa;
+  background-color: #fefafb;
   font-size: 20px;
   color: #000;
 }
@@ -14,6 +14,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+}
+.trailing {
+  z-index: 100;
 }
 .header_font > h2 {
   font-size: 1.3rem;
@@ -30,7 +33,7 @@ header {
   box-sizing: border-box;
   /* header固定 */
   position: fixed;
-  z-index: 100;
+  z-index: 90;
   width: 100%;
   padding-top: 0.9rem;
   padding-left: 1.1rem;

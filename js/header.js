@@ -5,8 +5,6 @@ function loop() {
   func = new canvas_function();
   func.resize();
   draw();
-  // speed_func();
-  event_interval = 18;
 }
 
 // 弁当メニュー（？）の切替
