@@ -6,10 +6,13 @@ function effect() {
   requestAnimationFrame(effect);
   func = new canvas_function();
   func.background_size();
-  ctx.fillStyle = "rgba(255,255,255,0.01)";
-  ctx.fillRect(0, 0, window_size_w, window_size_h);
-  draw_trailing();
-  // speed_func();
+  if (navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/i)) {
+  } else {
+    ctx.fillStyle = "rgba(255,255,255,0.01)";
+    ctx.fillRect(0, 0, window_size_w, window_size_h);
+    draw_trailing();
+    // speed_func();
+  }
 }
 
 function draw_rain() {}
