@@ -34,8 +34,6 @@
   </head>
   <body>
     <div id="body_div">
-      <!-- MAKE: 文字ふらしと、カーソルの軌道 -->
-      <canvas id="background" class="back"></canvas>
       <header id="header">
         <div class="header_div">
           <div class="header_font" id="e_title">
@@ -46,26 +44,25 @@
         <div class="header_canvas">
           <button onclick="button_click()">
             <canvas id="menu" class="menu"></canvas>
-            <canvas id="trailing" class="trailing"></canvas>
           </button>
         </div>
       </header>
       <div id="header_bottom_padding" class="header_bottom"></div>
-      <!-- <h1 class="title">
-      ゆにちゃんのぽーと<span>ふ</span>ぉりお（？）
-    </h1> -->
       <!-- MAKE: ホーム画面作る
       MAKE: メニューを作る
     -->
       <div class="home" id="home_parents">
         <!-- MAKE: ポートフォリオの内容 -->
+        <h1 class="title">
+          ゆにちゃんのぽーと<span>ふ</span>ぉりお（？）
+        </h1>
         <!-- TODO: スクロールしたら画像が小さくなるようにする -->
         <!-- TODO: 〃半透明になるようにする、hoverで元に戻す -->
-        <!-- <img
+        <img
           src="./img/unios103.png"
           class="unios103_icon"
-          style="position: fixed; right:0; bottom:0; width: 60vh; height: 60vh; opacity:1"
-        /> -->
+          style="position: fixed; right:0; bottom:0; width: 60vh; height: 60vh; opacity:0.5;"
+        />
         <canvas id="cvs_home"></canvas>
       </div>
       <!-- TODO: 確認が終わったら消す -->
@@ -74,7 +71,6 @@
     <script type="text/javascript" src="js/function/variable.js"></script>
     <script type="text/javascript" src="./js/function/function.js"></script>
     <script type="text/javascript" src="./js/header.js"></script>
-    <script type="text/javascript" src="js/effect.js"></script>
     <script type="text/javascript" src="js/home.js"></script>
   </body>
 </html>
