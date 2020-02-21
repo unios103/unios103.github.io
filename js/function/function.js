@@ -63,22 +63,4 @@ function canvas_function() {
     canvas_home.style.height =
       String(canvas_home.height / devicePixelRatio) + "px";
   };
-
-  // effect.js,home.js
-  this.background_size = function() {
-    canvas_background.width = window.innerWidth * devicePixelRatio;
-    canvas_background.height = window.innerHeight * devicePixelRatio;
-    canvas_background.style.width =
-      String(canvas_background.width / devicePixelRatio) + "px";
-    canvas_background.style.height =
-      String(canvas_background.height / devicePixelRatio) + "px";
-    canvas_trailing.width = window.innerWidth * devicePixelRatio;
-    canvas_trailing.height = window.innerHeight * devicePixelRatio;
-    canvas_trailing.style.width =
-      String(canvas_trailing.width / devicePixelRatio) + "px";
-    canvas_trailing.style.height =
-      String(canvas_trailing.height / devicePixelRatio) + "px";
-    window_size_w = canvas_trailing.width;
-    window_size_h = canvas_trailing.height;
-  };
 }

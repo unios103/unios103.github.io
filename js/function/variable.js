@@ -7,10 +7,6 @@ var header,
   home_parents,
   canvas_home,
   cvs_home,
-  canvas_background,
-  cvs_background,
-  canvas_trailing,
-  cvs_trailing,
   // header.js-5:func = new canvas_function();
   func,
   wid,
@@ -36,10 +32,6 @@ function get_id() {
   cvs_home = canvas_home.getContext("2d");
   canvas1 = document.getElementById("menu");
   cvs1 = canvas1.getContext("2d");
-  canvas_background = document.getElementById("background");
-  cvs_background = canvas_background.getContext("2d");
-  canvas_trailing = document.getElementById("trailing");
-  cvs_trailing = canvas_trailing.getContext("2d");
 }
 
 // メニューが開かれているかどうかの判定と再初期化
