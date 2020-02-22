@@ -7,6 +7,8 @@ var header,
   home_parents,
   canvas_home,
   cvs_home,
+  canvas_hello,
+  cvs_hello,
   // header.js-5:func = new canvas_function();
   func,
   wid,
@@ -17,11 +19,7 @@ var header,
   rotate = 0,
   sub_rot = 360,
   open = true,
-  speed = 1,
-  mouse_pos_x,
-  mouse_pos_y,
-  trailing_flag = false;
-event_interval = 18;
+  speed = 1;
 
 function get_id() {
   header = document.getElementById("header");
@@ -30,6 +28,8 @@ function get_id() {
   body_div = document.getElementById("body_div");
   canvas_home = document.getElementById("cvs_home");
   cvs_home = canvas_home.getContext("2d");
+  canvas_hello = document.getElementById("hello");
+  cvs_hello = canvas_hello.getContext("2d");
   canvas1 = document.getElementById("menu");
   cvs1 = canvas1.getContext("2d");
 }
