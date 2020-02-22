@@ -7,10 +7,16 @@
       name="viewport"
       content="width=device-width,initial-scale=1.0,minimum-scale=1.0"
     />
-    <link rel="shortcut icon" href="./img/unios103.jpeg" type="image/png" />
+    <link rel="shortcut icon" href="./img/unios103.png" type="image/png" />
     <link type="text/css" rel="stylesheet" href="css/header.css" />
+    <!-- title -->
     <link
-      href="https://fonts.googleapis.com/css?family=M+PLUS+1p"
+      href="https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- title “Hi” -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Sacramento&display=swap"
       rel="stylesheet"
     />
     <link
@@ -30,7 +36,7 @@
     <meta property="og:description" content="unios103の自己紹介" />
     <meta property="og:url" content="https://unios103.github.io/" />
     <!-- !!! -->
-    <meta property="og:image" content="./img/unios103.jpg" />
+    <meta property="og:image" content="./img/unios103.png" />
   </head>
   <body>
     <div id="body_div">
@@ -47,26 +53,21 @@
           </button>
         </div>
       </header>
-      <div id="header_bottom_padding" class="header_bottom"></div>
       <!-- MAKE: ホーム画面作る
       MAKE: メニューを作る
     -->
-      <div class="home" id="home_parents">
-        <!-- MAKE: ポートフォリオの内容 -->
-        <h1 class="title">
-          ゆにちゃんのぽーと<span>ふ</span>ぉりお（？）
-        </h1>
-        <!-- TODO: スクロールしたら画像が小さくなるようにする -->
-        <!-- TODO: 〃半透明になるようにする、hoverで元に戻す -->
-        <img
-          src="./img/unios103.png"
-          class="unios103_icon"
-          style="position: fixed; right:0; bottom:0; width: 60vh; height: 60vh; opacity:0.5;"
-        />
-        <canvas id="cvs_home"></canvas>
+      <div class="height">
+        <div class="home" id="home_parents">
+          <!-- MAKE: ポートフォリオの内容 -->
+          <!-- TODO: スクロールしたら画像が小さくなるようにする -->
+          <!-- TODO: 〃半透明になるようにする、hoverで元に戻す -->
+          <img src="./img/sakura.png" class="sakura" id="sakura" />
+          <canvas id="cvs_home" class="cvs_home"></canvas>
+          <canvas id="hello" class="cvs_home hello"></canvas>
+        </div>
       </div>
       <!-- TODO: 確認が終わったら消す -->
-      <div style="height: 300px;"></div>
+      <div style="height: 300px;position: relative;"></div>
     </div>
     <script type="text/javascript" src="js/function/variable.js"></script>
     <script type="text/javascript" src="./js/function/function.js"></script>

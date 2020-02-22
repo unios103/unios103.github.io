@@ -15,6 +15,7 @@ function draw() {
   cvs1.clearRect(0, 0, wid, wid);
   speed += 0.4;
   rotate += speed;
+  cvs1.fillStyle = "#000";
   if (click_flag) {
     dot(rotate);
   } else {
