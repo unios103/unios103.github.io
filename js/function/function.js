@@ -50,12 +50,9 @@ function canvas_function() {
     canvas1.style.width = String(canvas1.width / devicePixelRatio) + "px";
     canvas1.style.height = String(canvas1.height / devicePixelRatio) + "px";
     wid = title_menu;
-    // headerの下に余白を作る
-    let header_height = header.clientHeight;
-    padding.style.height = header_height + "px";
     // homeのcanvasサイズ
     let div_home_w = window.innerWidth * devicePixelRatio;
-    let div_home_h = (window.innerHeight - header_height) * devicePixelRatio;
+    let div_home_h = window.innerHeight * devicePixelRatio;
     canvas_home.width = div_home_w;
     canvas_home.height = div_home_h;
     canvas_home.style.width =
@@ -70,5 +67,6 @@ function canvas_function() {
       String(canvas_hello.height / devicePixelRatio) + "px";
     window_size_w = window.innerWidth;
     window_size_h = window.innerHeight;
+    img_size = sakura.style.width;
   };
 }

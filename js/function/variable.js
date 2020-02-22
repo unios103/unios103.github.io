@@ -1,10 +1,11 @@
 var header,
   e_title,
-  padding,
   body_div,
   canvas1,
   cvs1,
   home_parents,
+  sakura,
+  img_size,
   canvas_home,
   cvs_home,
   canvas_hello,
@@ -24,8 +25,8 @@ var header,
 function get_id() {
   header = document.getElementById("header");
   e_title = document.getElementById("e_title");
-  padding = document.getElementById("header_bottom_padding");
   body_div = document.getElementById("body_div");
+  sakura = document.getElementById("sakura");
   canvas_home = document.getElementById("cvs_home");
   cvs_home = canvas_home.getContext("2d");
   canvas_hello = document.getElementById("hello");
