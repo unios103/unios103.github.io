@@ -1,6 +1,7 @@
 var header,
   e_title,
   menu_list,
+  phone_menu,
   account_box,
   body_div,
   canvas1,
@@ -34,6 +35,7 @@ function get_id() {
   header = document.getElementById("header");
   e_title = document.getElementById("e_title");
   menu_list = document.getElementById("menu_list");
+  phone_menu = document.getElementById("phone_menu");
   account_box = document.getElementById("account_box");
   body_div = document.getElementById("body_div");
   sakura = document.getElementById("sakura");

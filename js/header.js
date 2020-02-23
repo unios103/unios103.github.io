@@ -38,13 +38,11 @@ function dot(rot) {
     func.f_rect(position);
     if (click_flag) {
       // /→×への変更
-      menu_list.style.right = 0;
-      menu_list.style.opacity = 1;
+      func.media(true);
       func.click_flag_true(position, (sub_rot -= speed));
     } else {
       // ×→/への変更
-      menu_list.style.right = -30 + "vw";
-      menu_list.style.opacity = 0;
+      func.media(false);
       func.click_flag_false(position, rot);
     }
   }

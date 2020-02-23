@@ -37,18 +37,48 @@ function canvas_function() {
     }
   };
 
-  this.media = function() {
+  this.media = function(flag) {
     if (navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/i)) {
       // スマホ・タブレット（iOS・Android）の場合
       if (window.innerHeight > window.innerWidth) {
         // 縦に持っていた時
+        account_box.style.width = 60 + "vw";
+        if (flag) {
+          menu_list.style.width = 60 + "vw";
+          phone_menu.style.right = 0;
+          menu_list.style.right = 0;
+          menu_list.style.opacity = 1;
+        } else {
+          phone_menu.style.right = -100 + "vw";
+          menu_list.style.right = -30 + "vw";
+          menu_list.style.opacity = 0;
+        }
       } else {
         // 横に持っていた時
+        if (flag) {
+          phone_menu.style.right = -100 + "vw";
+          menu_list.style.right = 0;
+          menu_list.style.opacity = 1;
+        } else {
+          phone_menu.style.right = -100 + "vw";
+          menu_list.style.right = -30 + "vw";
+          menu_list.style.opacity = 0;
+        }
       }
     } else {
       // PCの場合の処理を記述
-      if (window.innerWidth <= 750) {
+      if (flag) {
+        if (window.innerWidth <= 750) {
+          phone_menu.style.right = 0;
+        }
+        menu_list.style.right = 0;
+        menu_list.style.opacity = 1;
       } else {
+        if (window.innerWidth <= 750) {
+          phone_menu.style.right = -100 + "vw";
+        }
+        menu_list.style.right = -30 + "vw";
+        menu_list.style.opacity = 0;
       }
     }
   };

@@ -74,3 +74,14 @@
 .account_box p a:hover {
   color: #b4b4b4;
 }
+
+.phone_menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  right: -100vw;
+  background-color: white;
+  z-index: 7;
+  transition: 1s;
+  transition-delay: 0.2s;
+}

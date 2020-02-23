@@ -61,7 +61,7 @@ header {
 }
 .cvs_home {
   position: absolute;
-  z-index: 7;
+  z-index: 6;
   letter-spacing: 10px;
   background-color: transparent;
 }

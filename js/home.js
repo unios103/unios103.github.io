@@ -7,6 +7,7 @@ function home_props() {
     // スマホ・タブレット（iOS・Android）の場合
     if (window.innerHeight > window.innerWidth) {
       // 縦に持っていた時
+      account_box.style.width = 60 + "vw";
       sakura.style.width = 100 + "vw";
       sakura.style.opacity = 0;
       donut.style.opacity = 1;
@@ -95,6 +96,9 @@ function ios_android_h(h) {
     text = hello.measureText("Hello");
     char_pos = [(img_size - save) / 2.2, img_size_h / 4.2 - h];
     top_page_func.hello(hello);
+    let menu_font = window_size_h / 30 + window_size_h / 25;
+    menu_list.style.fontSize = menu_font / 2 + "px";
+    account_box.style.fontSize = menu_font / 3 + "px";
   }
 }
 
