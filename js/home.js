@@ -24,7 +24,7 @@ function home_props() {
     }
   } else {
     // PCの場合の処理を記述
-    if (window.innerHeight > window.innerWidth * 0.8) {
+    if (window.innerHeight > window.innerWidth * 0.75) {
       sakura.style.height = 100 + "vh";
       sakura.style.width = 40 + "%";
       sakura.style.objectFit = "cover";
@@ -93,6 +93,13 @@ function pc_h(w) {
   text = hello.measureText("Hello").width;
   char_pos = [(img_size_h - text) / 2.6 + text - w, img_size_h / 4];
   top_page_func.hello(hello);
+  menu_list.style.fontSize =
+    (window_size_h / 38 -
+      (w * devicePixelRatio) / 38 +
+      window_size_h / 25 -
+      (w * devicePixelRatio) / 25) /
+      2 +
+    "px";
 }
 
 function top_page() {
@@ -105,7 +112,7 @@ function top_page() {
   that.me = function(hello, save) {
     hello.strokeStyle = "#434343";
     hello.fillStyle = "#434343";
-    hello.lineWidth = 2;
+    hello.lineWidth = 1.7;
     hello.beginPath();
     hello.moveTo(char_pos[0] - save / 2, char_pos[1] - text / 32);
     hello.lineTo((char_pos[0] - text / 2) * 0.97, char_pos[1] - text / 32);

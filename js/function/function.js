@@ -37,9 +37,6 @@ function canvas_function() {
     }
   };
 
-  // home.js
-  this.direction_check = function(e) {};
-
   // 要素のサイズを可変に
   // header.js
   this.resize = function() {

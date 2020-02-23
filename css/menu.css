@@ -1,0 +1,50 @@
+.menu_list {
+  font-family: "Raleway";
+  font-weight: 100;
+  position: fixed;
+  height: 100vh;
+  width: 180px;
+  top: 0;
+  right: -30vw;
+  z-index: 8;
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 0.2s;
+}
+.menu_list_box {
+  font-size: 100%;
+  position: absolute;
+  top: 18vh;
+  right: 15%;
+  line-height: 2.5rem;
+}
+.a_box {
+  width: 100%;
+  padding-right: 1rem;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  border-bottom: 1.6px solid #eb7a77;
+  transition: 0.35s;
+}
+a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 1.6px solid #ff8884ea;
+}
+a:hover > .pink {
+  color: #eb7a77;
+}
