@@ -67,6 +67,7 @@ function canvas_function() {
       String(canvas_hello.height / devicePixelRatio) + "px";
     window_size_w = window.innerWidth;
     window_size_h = window.innerHeight;
-    img_size = sakura.style.width;
+    img_size = div_home_w;
+    img_size_h = div_home_h;
   };
 }

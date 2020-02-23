@@ -42,7 +42,7 @@ header {
   line-height: 0.8rem;
 }
 .header_canvas {
-  padding-right: 1.3rem;
+  padding-right: 1.8rem;
 }
 .title {
   font-family: "M PLUS 1p";
@@ -76,13 +76,23 @@ header {
   position: absolute;
   top: 0;
   height: 100vh;
-  opacity: 1;
+  opacity: 0;
+}
+.donut_parents {
+  position: absolute;
+  height: 100vh;
+}
+.donut {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  opacity: 0;
 }
 .height {
   height: 100vh;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .header_font > h2 {
     font-size: 0.9rem;
     line-height: 0.9rem;

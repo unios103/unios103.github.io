@@ -5,13 +5,19 @@ var header,
   cvs1,
   home_parents,
   sakura,
+  donut,
   img_size,
+  img_size_h,
   canvas_home,
   cvs_home,
   canvas_hello,
   cvs_hello,
   // header.js-5:func = new canvas_function();
   func,
+  top_page_func,
+  size,
+  char_text,
+  char_pos = [],
   wid,
   window_size_w,
   window_size_h,
@@ -27,6 +33,7 @@ function get_id() {
   e_title = document.getElementById("e_title");
   body_div = document.getElementById("body_div");
   sakura = document.getElementById("sakura");
+  donut = document.getElementById("donut");
   canvas_home = document.getElementById("cvs_home");
   cvs_home = canvas_home.getContext("2d");
   canvas_hello = document.getElementById("hello");
