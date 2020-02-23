@@ -40,6 +40,36 @@ function home_props() {
   }
 }
 
+function top_page() {
+  var that = this;
+  that.my_name = function(ctx) {
+    ctx.fillStyle = "#000";
+    ctx.textBaseline = "top";
+    ctx.fillText("MY NAME IS ...", char_pos[0], char_pos[1]);
+  };
+  that.me = function(hello, save) {
+    hello.strokeStyle = "#434343";
+    hello.fillStyle = "#434343";
+    hello.lineWidth = 1.7;
+    hello.beginPath();
+    hello.moveTo(char_pos[0] - save / 2, char_pos[1] - text / 32);
+    hello.lineTo((char_pos[0] - text / 2) * 0.97, char_pos[1] - text / 32);
+    hello.moveTo(char_pos[0] + save / 2, char_pos[1] - text / 32);
+    hello.lineTo((char_pos[0] + text / 2) * 1.03, char_pos[1] - text / 32);
+    hello.stroke();
+    hello.fillText("unos103's portfolio", char_pos[0], char_pos[1]);
+  };
+  that.hello = function(hello) {
+    hello.fillStyle = "#EB7A77";
+    hello.textAlign = "center";
+    hello.textBaseline = "hanging";
+    hello.translate(char_pos[0], char_pos[1]);
+    hello.rotate(-26 * rad);
+    hello.translate(-char_pos[0], -char_pos[1]);
+    hello.fillText("Hello", char_pos[0], char_pos[1]);
+  };
+}
+
 function ios_android_h(h) {
   {
     let ctx = cvs_home;
@@ -58,7 +88,6 @@ function ios_android_h(h) {
     hello.font = font_style_home;
     text = hello.measureText("unos103's portfolio").width;
     hello.textAlign = "center";
-    // char_pos[0] += save / 2;
     char_pos[1] += text / 3.4;
     top_page_func.me(hello, save);
     font_style_home = img_size_h / 30 + "px 'Sacramento'";
@@ -93,43 +122,9 @@ function pc_h(w) {
   text = hello.measureText("Hello").width;
   char_pos = [(img_size_h - text) / 2.6 + text - w, img_size_h / 4];
   top_page_func.hello(hello);
-  menu_list.style.fontSize =
-    (window_size_h / 38 -
-      (w * devicePixelRatio) / 38 +
-      window_size_h / 25 -
-      (w * devicePixelRatio) / 25) /
-      2 +
-    "px";
-}
-
-function top_page() {
-  var that = this;
-  that.my_name = function(ctx) {
-    ctx.fillStyle = "#000";
-    ctx.textBaseline = "top";
-    ctx.fillText("MY NAME IS ...", char_pos[0], char_pos[1]);
-  };
-  that.me = function(hello, save) {
-    hello.strokeStyle = "#434343";
-    hello.fillStyle = "#434343";
-    hello.lineWidth = 1.7;
-    hello.beginPath();
-    hello.moveTo(char_pos[0] - save / 2, char_pos[1] - text / 32);
-    hello.lineTo((char_pos[0] - text / 2) * 0.97, char_pos[1] - text / 32);
-    hello.moveTo(char_pos[0] + save / 2, char_pos[1] - text / 32);
-    hello.lineTo((char_pos[0] + text / 2) * 1.03, char_pos[1] - text / 32);
-    hello.stroke();
-    hello.fillText("unos103's portfolio", char_pos[0], char_pos[1]);
-  };
-  that.hello = function(hello) {
-    hello.fillStyle = "#EB7A77";
-    hello.textAlign = "center";
-    hello.textBaseline = "hanging";
-    hello.translate(char_pos[0], char_pos[1]);
-    hello.rotate(-26 * rad);
-    hello.translate(-char_pos[0], -char_pos[1]);
-    hello.fillText("Hello", char_pos[0], char_pos[1]);
-  };
+  let menu_font = window_size_h / 38 - w / 38 + window_size_h / 25 - w / 25;
+  menu_list.style.fontSize = menu_font / 2 + "px";
+  account_box.style.fontSize = menu_font / 3.4 + "px";
 }
 
 window.requestAnimFrame = (function() {

@@ -21,12 +21,10 @@ body {
 }
 .header_font > h2 {
   font-size: 1.3rem;
-  /* opacity: 0; */
   line-height: 1.3rem;
 }
 .header_font > span {
   font-size: 0.7rem;
-  /* opacity: 0; */
   color: #3c485c;
 }
 header {
@@ -90,7 +88,7 @@ header {
   height: 100vh;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .header_font > h2 {
     font-size: 0.9rem;
     line-height: 0.9rem;

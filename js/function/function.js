@@ -37,6 +37,22 @@ function canvas_function() {
     }
   };
 
+  this.media = function() {
+    if (navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/i)) {
+      // スマホ・タブレット（iOS・Android）の場合
+      if (window.innerHeight > window.innerWidth) {
+        // 縦に持っていた時
+      } else {
+        // 横に持っていた時
+      }
+    } else {
+      // PCの場合の処理を記述
+      if (window.innerWidth <= 750) {
+      } else {
+      }
+    }
+  };
+
   // 要素のサイズを可変に
   // header.js
   this.resize = function() {
