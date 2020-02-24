@@ -87,19 +87,57 @@
   height: 100vh;
   width: 100vw;
 }
-.right {
+.account_img {
   object-fit: cover;
-  object-position: 5% 0;
-  height: 80vh;
-  width: 50vh;
+  object-position: 0 70%;
+  height: 65vh;
+  width: 40vh;
   z-index: -1;
   right: 0;
   bottom: 0;
   opacity: 0.8;
 }
+.about_account {
+  height: 70vh;
+}
+.account_contents_box {
+  font-family: "Lato", "Noto Sans JP";
+  font-weight: lighter;
+  padding-top: 5vh;
+  max-width: 60vw;
+}
+.end {
+  text-align: center;
+  display: block;
+  padding-top: 9vh;
+}
+.copy {
+  font-family: "Lato";
+  font-weight: 300;
+  position: absolute;
+  bottom: 5vh;
+  width: 100vw;
+  font-size: 0.65rem;
+}
 p {
   overflow-wrap: break-word;
   word-wrap: break-word;
+}
+.copy p {
+  display: block;
+  height: 1.5rem;
+}
+.copy p a {
+  font-size: 1.2rem;
+  display: inline-block;
+  line-height: 1.3rem;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #434343;
+  transition: 0.4s;
+}
+.copy p a:hover {
+  color: #b4b4b4;
 }
 @media (max-height: 700px) {
   .about_contents {
@@ -118,6 +156,10 @@ p {
   }
   .other_prof_box {
     padding: 5px 0;
+  }
+  .account_contents_box {
+    padding-top: 8vh;
+    max-width: 60vw;
   }
 }
 @media (max-height: 570px) {

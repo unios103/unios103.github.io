@@ -52,7 +52,7 @@ header {
   position: relative;
   width: 100%;
 }
-/* TODO: */
+/* WAR: 削除しない、値も変えない */
 .header_div {
   opacity: 0;
 }
