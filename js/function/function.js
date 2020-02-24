@@ -46,6 +46,7 @@ function canvas_function() {
         if (flag) {
           menu_list.style.width = 60 + "vw";
           phone_menu.style.right = 0;
+          phone_menu.style.backgroundColor = "#ffffff";
           menu_list.style.right = 0;
           menu_list.style.opacity = 1;
         } else {
@@ -56,7 +57,8 @@ function canvas_function() {
       } else {
         // 横に持っていた時
         if (flag) {
-          phone_menu.style.right = -100 + "vw";
+          phone_menu.style.right = 0;
+          phone_menu.style.backgroundColor = "rgba(255, 255, 255,0)";
           menu_list.style.right = 0;
           menu_list.style.opacity = 1;
         } else {
@@ -68,15 +70,16 @@ function canvas_function() {
     } else {
       // PCの場合の処理を記述
       if (flag) {
-        if (window.innerWidth <= 750) {
-          phone_menu.style.right = 0;
+        phone_menu.style.right = 0;
+        if (window.innerWidth <= 760) {
+          phone_menu.style.backgroundColor = "#ffffff";
+        } else {
+          phone_menu.style.backgroundColor = "rgba(255, 255, 255,0)";
         }
         menu_list.style.right = 0;
         menu_list.style.opacity = 1;
       } else {
-        if (window.innerWidth <= 750) {
-          phone_menu.style.right = -100 + "vw";
-        }
+        phone_menu.style.right = -100 + "vw";
         menu_list.style.right = -30 + "vw";
         menu_list.style.opacity = 0;
       }
@@ -86,6 +89,9 @@ function canvas_function() {
   // 要素のサイズを可変に
   // header.js
   this.resize = function() {
+    about_b_me.style.paddingTop = e_title.clientHeight * 1.5 + "px";
+    about_b_work.style.paddingTop = e_title.clientHeight * 1.5 + "px";
+    about_b_acc.style.paddingTop = e_title.clientHeight * 1.5 + "px";
     // canvasサイズと解像度の設定
     let title_menu = e_title.clientHeight * devicePixelRatio;
     canvas1.width = title_menu;

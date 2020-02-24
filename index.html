@@ -11,7 +11,7 @@
     <link type="text/css" rel="stylesheet" href="css/header.css" />
     <!-- title -->
     <link
-      href="https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap"
+      href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500&display=swap"
       rel="stylesheet"
     />
     <!-- title “Hi” -->
@@ -20,11 +20,15 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Wire+One&display=swap"
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
       rel="stylesheet"
     />
     <meta name="twitter:card" content="summary_large_image" />
@@ -43,7 +47,7 @@
       <header id="header">
         <div class="header_div">
           <div class="header_font" id="e_title">
-            <h2 class="e_title">SELF-INTRODUCTION</h2>
+            <h2 class="e_title">Self-Introduction</h2>
             <span class="e_title">&copy;2020 unios103</span>
           </div>
         </div>
@@ -61,13 +65,18 @@
             >
           </p>
           <p class="a_box">
-            <a href="#about_me" onclick="button_click()"
+            <a href="#about_b_me" onclick="button_click()"
               ><span class="pink">A</span>bout Me</a
             >
           </p>
           <p class="a_box">
-            <a href="#works" onclick="button_click()"
-              ><span class="pink">M</span>y Works</a
+            <a href="#about_b_work" onclick="button_click()"
+              ><span class="pink">M</span>y Work</a
+            >
+          </p>
+          <p class="a_box">
+            <a href="#about_b_acc" onclick="button_click()"
+              ><span class="pink">A</span>ccounts</a
             >
           </p>
         </div>
@@ -94,11 +103,91 @@
         </div>
       </div>
       <!-- TODO: 確認が終わったら消す -->
-      <div class="about_box" style="height: 100vh;position: relative;">
-        <h2 id="about_me">About Me</h2>
+      <div class="about_box" id="about_b_me">
+        <img src="./img/unios103_d.png" class="unios103" />
+        <h2 id="about_me" class="contents_title">About Me</h2>
+        <div class="about_contents">
+          <h3 class="sub_title">Profile</h3>
+          <div class="body_text">
+            <p>こんにちは、unios103です。</p>
+            <p>お絵かきとプログラミングをする高専生です。</p>
+          </div>
+          <div class="other_prof_box">
+            <div class="other_prof">
+              <i class="fas fa-birthday-cake"></i>
+              <div class="prof_p">
+                <p class="icon_right">2003年10月1日</p>
+              </div>
+            </div>
+            <div class="other_prof">
+              <i class="fas fa-school"></i>
+              <div class="prof_p">
+                <p class="icon_right">
+                  高専(<a
+                    href="https://twitter.com/hashtag/kosen19s?src=hashtag_click"
+                    >#kosen19s</a
+                  >)
+                </p>
+              </div>
+            </div>
+            <div class="other_prof">
+              <i class="fas fa-robot"></i>
+              <div class="prof_p">
+                <p class="icon_right">コンピュータ部</p>
+                <p class="icon_right">ロボット研究部</p>
+              </div>
+            </div>
+            <div class="other_prof">
+              <i class="fas fa-user-friends"></i>
+              <div class="prof_p">
+                <p class="icon_right">ボランティア</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about_contents">
+          <h3 class="sub_title">My Hobby <span>& Skill</span></h3>
+          <div class="body_text">
+            <p>Canvas APIを使うのが好きです。</p>
+            <p>TypeScriptやReactなどもできるようになりたいです。</p>
+            <p>
+              プログラミングの他に、絵を描くことも好きです。
+            </p>
+            <p>
+              現在はデザインにも興味があり、特に色彩心理学やUIデザインを勉強したいと思っています。
+            </p>
+            <p>アイコン等のイラストを描かせてもらえると嬉しいです。</p>
+          </div>
+          <div class="other_text other_prof_box">
+            <div class="other_prof">
+              <i class="fas fa-laptop"></i>
+              <div class="prof_p">
+                <p class="icon_right">HTML,CSS,JavaScript,C++</p>
+              </div>
+            </div>
+            <div class="other_prof">
+              <i class="fas fa-pencil-alt"></i>
+              <div class="prof_p">
+                <p class="icon_right">色鉛筆画、デッサン</p>
+              </div>
+            </div>
+            <div class="other_prof">
+              <i class="fab fa-itunes-note"></i>
+              <div class="prof_p">
+                <p class="icon_right">ピアノ、和太鼓、篠笛、(ホルン)</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="about_box" style="height: 100vh;position: relative;">
-        <h2 id="works">My Works</h2>
+      <div class="about_box" id="about_b_work">
+        <h2 id="work" class="contents_title">My Works</h2>
+      </div>
+      <div class="img2_contents">
+        <div class="about_box" id="about_b_acc">
+          <h2 id="account" class="contents_title">Accounts</h2>
+        </div>
+        <img src="./img/cho.PNG" class="right" />
       </div>
     </div>
     <script type="text/javascript" src="js/function/variable.js"></script>

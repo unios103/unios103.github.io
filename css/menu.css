@@ -1,6 +1,5 @@
 .menu_list {
   font-family: "Raleway";
-  font-weight: 100;
   position: fixed;
   height: 100vh;
   width: 180px;
@@ -17,6 +16,7 @@
   top: 16vh;
   right: 15%;
   line-height: 10vh;
+  height: 100vh;
 }
 .a_box {
   width: 100%;
@@ -80,8 +80,8 @@
   width: 100vw;
   height: 100vh;
   right: -100vw;
-  background-color: white;
   z-index: 7;
   transition: 1s;
   transition-delay: 0.2s;
+  background: linear-gradient(to right, #fefafb00 60%, #fefafb88, #fefafb);
 }

@@ -3,6 +3,9 @@ var header,
   menu_list,
   phone_menu,
   account_box,
+  about_b_me,
+  about_b_work,
+  about_b_acc,
   body_div,
   canvas1,
   cvs1,
@@ -37,6 +40,9 @@ function get_id() {
   menu_list = document.getElementById("menu_list");
   phone_menu = document.getElementById("phone_menu");
   account_box = document.getElementById("account_box");
+  about_b_me = document.getElementById("about_b_me");
+  about_b_work = document.getElementById("about_b_work");
+  about_b_acc = document.getElementById("about_b_acc");
   body_div = document.getElementById("body_div");
   sakura = document.getElementById("sakura");
   donut = document.getElementById("donut");

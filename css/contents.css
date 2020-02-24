@@ -1,0 +1,128 @@
+.about_box {
+  position: relative;
+  box-sizing: border-box;
+  height: 100vh;
+  width: auto;
+  text-align: center;
+  font-size: 2rem;
+  z-index: 1;
+}
+.contents_title {
+  font-family: "Raleway";
+}
+.unios103,
+.right {
+  position: absolute;
+  opacity: 0.9;
+}
+.unios103 {
+  width: 30vw;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+}
+.about_contents {
+  font-family: "Lato", "Noto Sans JP";
+  font-weight: lighter;
+  font-size: 1.1rem;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 5vh 5.5vw 0 0;
+  text-align: left;
+  line-height: 1.4rem;
+}
+.sub_title {
+  font-family: "Raleway", "Noto Sans JP";
+  font-weight: 300;
+  font-size: 1.7rem;
+  text-align: left;
+  padding: 8px 5%;
+}
+.sub_title > span {
+  font-size: 1rem;
+}
+.body_text {
+  text-align: left;
+  display: inline-block;
+  padding: 8px 5%;
+}
+.body_text p {
+  margin: 0 auto;
+}
+.other_prof_box {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px 0;
+  flex-wrap: wrap;
+}
+.other_prof,
+.other_prof a {
+  font-size: 0.75rem;
+  line-height: 0.85rem;
+  color: #434343;
+  width: 25%;
+  margin: 0 auto;
+  text-align: center;
+  word-break: keep-all;
+}
+.other_prof a {
+  text-decoration: none;
+  transition: 0.4s;
+  word-break: keep-all;
+}
+.prof_p {
+  margin: 0 auto;
+  text-align: center;
+}
+.icon_right {
+  display: inline-block;
+  text-align: left;
+}
+.other_prof a:hover {
+  color: #b4b4b4;
+}
+.img2_contents {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.right {
+  object-fit: cover;
+  object-position: 5% 0;
+  height: 80vh;
+  width: 50vh;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+}
+p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+@media (max-height: 700px) {
+  .about_contents {
+    font-size: 1.1rem;
+    max-width: 520px;
+    padding: 5vh 5.5vw 0 0;
+  }
+  .other_prof,
+  .other_prof a {
+    font-size: 0.7rem;
+    line-height: 1.15rem;
+  }
+  .sub_title,
+  .body_text {
+    padding: 5px 5%;
+  }
+  .other_prof_box {
+    padding: 5px 0;
+  }
+}
+@media (max-height: 570px) {
+  .about_contents {
+    max-width: 400px;
+    padding: 5vh 5.5vw 0 0;
+  }
+}
