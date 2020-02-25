@@ -87,9 +87,10 @@ header {
 
 @media (max-width: 750px) {
   header {
-    line-height: 0.2rem;
-    padding-top: 0.45rem;
-    padding-left: 0.6rem;
+    /* TODO:メニューボタンが小さかったら直す */
+    line-height: 0.7rem;
+    padding-top: 0.7rem;
+    padding-left: 0.4rem;
   }
   .header_canvas {
     padding-right: 0.7rem;

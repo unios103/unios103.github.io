@@ -18,6 +18,17 @@ function home_props() {
       }
     } else {
       // 横に持っていた時
+      if (navigator.userAgent.match(/(iPhone|iPod|Android)/i)) {
+        canvas1.style.width =
+          String((canvas1.height * 1.7) / devicePixelRatio) + "px";
+        canvas1.style.height =
+          String((canvas1.height * 1.7) / devicePixelRatio) + "px";
+      } else {
+        canvas1.style.width =
+          String((canvas1.height * 1.3) / devicePixelRatio) + "px";
+        canvas1.style.height =
+          String((canvas1.height * 1.3) / devicePixelRatio) + "px";
+      }
       sakura.style.height = 100 + "vh";
       sakura.style.opacity = 1;
       donut.style.opacity = 0;

@@ -59,4 +59,5 @@ function speed_func() {
   const endTime = performance.now(); // 終了時間
   console.log(endTime - startTime); // 何ミリ秒かかったかを表示する
 }
+
 requestAnimFrame(loop);
