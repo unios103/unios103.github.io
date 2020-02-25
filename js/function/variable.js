@@ -62,3 +62,5 @@ function button_click() {
   sub_rot = 180;
   speed = 0;
 }
+
+get_id();

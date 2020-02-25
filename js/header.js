@@ -1,7 +1,6 @@
 // canvasの描画
 function loop() {
   requestAnimationFrame(loop);
-  get_id();
   func = new canvas_function();
   func.resize();
   draw();
