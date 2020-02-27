@@ -1,6 +1,7 @@
 @import "rCss.css";
 @import "menu.css";
 @import "contents.css";
+@import "media.css";
 
 html {
   background-color: #fefafb;
