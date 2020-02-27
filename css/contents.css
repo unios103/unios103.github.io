@@ -38,7 +38,7 @@
   text-align: left;
   padding: 8px 5%;
 }
-.sub_title > span {
+.sub_title span {
   font-size: 1rem;
 }
 .body_text {
@@ -48,6 +48,7 @@
 }
 .body_text p {
   margin: 0 auto;
+  line-height: 1.4rem;
 }
 .other_prof_box {
   display: flex;
@@ -59,7 +60,7 @@
 .other_prof,
 .other_prof a {
   font-size: 0.75rem;
-  line-height: 0.85rem;
+  line-height: 0.87rem;
   color: #434343;
   width: 25%;
   margin: 0 auto;
@@ -144,6 +145,104 @@ p {
 .copy p a:hover {
   color: #b4b4b4;
 }
+.work {
+  position: relative;
+}
+.work_contents {
+  position: absolute;
+  top: 0;
+  z-index: -3;
+  opacity: 0.4;
+}
+.work_contents p {
+  position: relative;
+}
+.work_sub {
+  padding-right: 2rem;
+}
+.work_img {
+  height: 60vh;
+  width: 43vw;
+  object-fit: cover;
+  object-position: 10% 27%;
+  border-radius: 0 0 200% 0;
+  shape-outside: circle(50%);
+}
+.font_j {
+  font-family: "Noto Sans JP";
+}
+small {
+  font-size: 0.9rem;
+}
+span .big {
+  font-size: 1.5rem;
+}
+.work .about_contents {
+  max-width: 850px;
+  padding-right: 0;
+}
+.img_other_box {
+  height: 20%;
+  width: 25%;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.img_pos_box {
+  position: relative;
+  width: 27vh;
+  height: 20vh;
+  transition: 0.6s;
+}
+.img_pos_box:hover {
+  box-shadow: 1px 1px 2px #434343;
+  border-radius: 4%;
+}
+.img_pos {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  object-fit: cover;
+  object-position: 0 20%;
+}
+.sketch {
+  object-position: 100% 30%;
+}
+.img_pos_comment {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 85%;
+  height: 85%;
+  transform: translateY(-50%) translateX(-50%);
+  border-radius: 4%;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: 0.5s;
+  transition-delay: 0.03s;
+  opacity: 0;
+}
+.img_pos_comment:hover {
+  opacity: 1;
+}
+.ipc {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.prof_text {
+  font-size: 80%;
+  padding: 0.1rem 1rem;
+  text-align: left;
+}
 @media (max-height: 700px) {
   .about_contents {
     font-size: 1.1rem;
@@ -172,4 +271,7 @@ p {
     max-width: 400px;
     padding: 5vh 5.5vw 0 0;
   }
+}
+.img_pos_box {
+  box-sizing: content-box;
 }
