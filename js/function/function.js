@@ -89,9 +89,10 @@ function canvas_function() {
   // 要素のサイズを可変に
   // header.js
   this.resize = function() {
-    about_b_me.style.paddingTop = e_title.clientHeight * 1.5 + "px";
-    about_b_work.style.paddingTop = e_title.clientHeight * 1.5 + "px";
-    about_b_acc.style.paddingTop = e_title.clientHeight * 1.5 + "px";
+    about_b_me.style.paddingTop = header.clientHeight + "px";
+    about_b_work.style.paddingTop = header.clientHeight + "px";
+    about_b_acc.style.paddingTop = header.clientHeight + "px";
+    // console.log(e_title.clientHeight);
     // canvasサイズと解像度の設定
     let title_menu = e_title.clientHeight * devicePixelRatio;
     canvas1.width = title_menu;

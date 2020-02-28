@@ -65,7 +65,8 @@
     object-position: 50% 50%;
   }
   .prof_text {
-    padding: 0 1%;
+    padding: 0 1rem;
+    line-height: 1.4rem;
   }
   .ipc i {
     opacity: 0;
@@ -82,7 +83,19 @@
     object-position: 50% 50%;
   }
 }
-@media (max-width: 730px) and (min-height: 400px) {
+@media (max-width: 800px) and (min-height: 400px) {
+  .contents_title {
+    font-size: 1.5rem;
+  }
+  .body_text {
+    font-size: 0.7rem;
+    padding-top: 0.1rem;
+  }
+  .body_text p {
+    line-height: 1rem;
+  }
+}
+@media (max-width: 1024px) and (min-height: 400px) {
   .work_prof_box {
     clear: right;
     display: flex;
@@ -91,9 +104,7 @@
   .min_works {
     margin: 0 1rem;
   }
-  .contents_title {
-    font-size: 1.5rem;
-  }
+
   .min_works {
     font-size: 0.9rem;
     padding: 0.5rem 0 0 0;
@@ -101,13 +112,6 @@
   }
   .sub_title {
     font-size: 1.3rem;
-  }
-  .body_text {
-    font-size: 0.7rem;
-    padding-top: 0.1rem;
-  }
-  .body_text p {
-    line-height: 1rem;
   }
   .other_prof_box {
     padding: 0.2rem;
@@ -202,14 +206,59 @@
   }
   .and_left {
     float: right;
+    font-size: 0.98rem;
+  }
+  .sub_title span {
+    font-size: 0.9rem;
+  }
+  .work_sub span .big {
+    font-size: 1.1rem;
   }
   .about_prof_p p {
     padding-bottom: 0;
+  }
+  .account_prof_box {
+    width: auto;
+    margin: 0 auto;
+    padding-top: 0.4rem;
+  }
+  .account_contents_box {
+    text-align: center;
+    max-width: 80vw;
+  }
+  .about_account {
+    height: 100%;
+  }
+  .copy {
+    padding-bottom: 15%;
+  }
+  .copy p {
+    height: 1.1rem;
   }
 }
 @media (max-height: 570px) {
   .work_icon_right {
     padding: 0;
     font-size: 0.8rem;
+  }
+}
+@media (min-height: 1000px) {
+  .work .about_contents {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  .work_sub {
+    display: inline-block;
+    width: 400px;
+  }
+}
+@media (min-width: 1000px) {
+  .work .about_contents {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .work_sub {
+    display: inline-block;
+    width: 500px;
   }
 }

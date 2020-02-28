@@ -60,6 +60,7 @@
   padding: 0 3vw;
   text-align: end;
   padding-bottom: 0.3rem;
+  bottom: 0;
 }
 .account_box p {
   display: inline;

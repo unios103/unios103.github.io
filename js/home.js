@@ -11,6 +11,7 @@ function home_props() {
       sakura.style.width = 100 + "vw";
       sakura.style.opacity = 0;
       donut.style.opacity = 1;
+      about_b_acc.style.paddingTop = 0 + "px";
       if (window.innerHeight > window.innerWidth * 1.4) {
         ios_android_h(0);
       } else {
