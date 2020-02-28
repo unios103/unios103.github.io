@@ -51,7 +51,7 @@ function canvas_function() {
           menu_list.style.opacity = 1;
         } else {
           phone_menu.style.right = -100 + "vw";
-          menu_list.style.right = -30 + "vw";
+          menu_list.style.right = -60 + "vw";
           menu_list.style.opacity = 0;
         }
       } else {
@@ -63,7 +63,7 @@ function canvas_function() {
           menu_list.style.opacity = 1;
         } else {
           phone_menu.style.right = -100 + "vw";
-          menu_list.style.right = -30 + "vw";
+          menu_list.style.right = -60 + "vw";
           menu_list.style.opacity = 0;
         }
       }
