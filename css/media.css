@@ -64,13 +64,30 @@
     object-fit: cover;
     object-position: 50% 50%;
   }
+  .prof_text {
+    padding: 0 1%;
+  }
+  .ipc i {
+    opacity: 0;
+    position: absolute;
+    line-height: 0;
+  }
 }
 @media (max-height: 330px) {
   .ipc p {
     line-height: 1.5rem;
   }
+  .huwa .img_pos {
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
 }
-@media (max-width: 730px) {
+@media (max-width: 730px) and (min-height: 400px) {
+  .work_prof_box {
+    clear: right;
+    display: flex;
+    justify-content: center;
+  }
   .min_works {
     margin: 0 1rem;
   }
@@ -79,14 +96,14 @@
   }
   .min_works {
     font-size: 0.9rem;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 0 0;
     border-radius: 4%;
   }
   .sub_title {
     font-size: 1.3rem;
   }
   .body_text {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     padding-top: 0.1rem;
   }
   .body_text p {
@@ -107,6 +124,14 @@
     display: block;
     padding: 0;
     line-break: strict;
+    font-size: 0.8em;
+    padding-bottom: 0;
+  }
+  .work_icon_right {
+    font-size: 0.9em;
+    position: relative;
+    top: 0;
+    padding: 0.5rem 0 0.3rem 0;
   }
   .unios103 {
     width: 70vw;
@@ -115,9 +140,6 @@
   }
   .prof_p {
     display: block;
-  }
-  .prof_p p {
-    padding-bottom: 0;
   }
   .min_box {
     width: 60vw;
@@ -131,5 +153,63 @@
   .other_prof {
     width: 44vw;
     margin: 0;
+    padding-top: 0.1rem;
+    font-size: 0.7rem;
+  }
+  .prof_text {
+    padding: 0;
+  }
+  .img_other_box {
+    height: 36vh;
+    width: 45%;
+    transform: translateX(0%);
+    position: relative;
+    padding-right: 3%;
+  }
+  .img_pos {
+    position: relative;
+    height: 40%;
+  }
+  .img_pos_comment {
+    position: relative;
+    opacity: 1;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    transform: translateY(0%) translateX(0%);
+    margin: 0;
+    background-color: #0000;
+  }
+  .ipc {
+    transform: translateY(0%) translateX(0%);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .ipc i {
+    opacity: 0;
+    position: absolute;
+    line-height: 0;
+  }
+  .big {
+    font-size: 1.2rem;
+    letter-spacing: 0.02rem;
+  }
+  .big::after {
+    content: "\A";
+    white-space: pre;
+  }
+  .and_left {
+    float: right;
+  }
+  .about_prof_p p {
+    padding-bottom: 0;
+  }
+}
+@media (max-height: 570px) {
+  .work_icon_right {
+    padding: 0;
+    font-size: 0.8rem;
   }
 }
