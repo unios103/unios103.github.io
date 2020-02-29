@@ -31,6 +31,7 @@ function home_props() {
           String((canvas1.height * 1.3) / devicePixelRatio) + "px";
       }
       sakura.style.height = 100 + "vh";
+      sakura.style.width = "auto";
       sakura.style.opacity = 1;
       donut.style.opacity = 0;
       pc_h(0);
@@ -46,6 +47,7 @@ function home_props() {
       pc_h(img_size / 8);
     } else {
       sakura.style.height = 100 + "vh";
+      sakura.style.width = "auto";
       sakura.style.opacity = 1;
       donut.style.opacity = 0;
       pc_h(0);
