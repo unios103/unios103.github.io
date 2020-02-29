@@ -1,10 +1,19 @@
-![unios103](https://user-images.githubusercontent.com/55628112/72915938-78ce8800-3d84-11ea-87af-6c3fb7212a29.jpeg)
-
 # unios103 の自己紹介
 
-## HTML+CSS+JavaScript(canvas)
+## HTML+CSS+JavaScript(Canvas)
 
-<p>描いた絵とか、好きなこととか<p>
-<p>只今、再作成中です</p>
-<p>↓↓↓</p>
-https://unios103.github.io
+描いた絵とか、好きなこととか。
+
+CSS と Canvas を使ってレスポンシブ対応するようにしました。
+
+[unios103.github.io](https://unios103.github.io)
+
+![unios103](https://user-images.githubusercontent.com/55628112/75606937-77d40780-5b35-11ea-8139-b4a0c31c315a.jpeg)
+
+以前のページとは大きくデザインを変更しています。
+
+### これまでに作成したページのコード
+
+- [version1](https://github.com/unios103/unios103.github.io/tree/oldPageOne)
+- [version2](https://github.com/unios103/unios103.github.io/tree/oldPageTwo)
+- [now](https://github.com/unios103/unios103.github.io)
