@@ -50,9 +50,13 @@
       property="og:image"
       content="https://avatars.githubusercontent.com/unios103"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.min.js"></script>
+    <script type="text/javascript" src="js/perlin.js"></script>
   </head>
   <body ontouchstart="">
-    <div id="body_div">
+    <div id="body_div" class="body_box">
+      <canvas class="load" id="load"></canvas>
+      <canvas class="loadChar" id="cha"></canvas>
       <header id="header">
         <div class="header_div">
           <div class="header_font" id="e_title">
@@ -340,5 +344,7 @@
     <script type="text/javascript" src="./js/function/function.js"></script>
     <script type="text/javascript" src="./js/header.js"></script>
     <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="js/loadAnimation.js"></script>
+    <script type="text/javascript" src="js/load.js"></script>
   </body>
 </html>

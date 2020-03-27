@@ -17,3 +17,8 @@ CSS と Canvas を使ってレスポンシブ対応するようにしました�
 - [version1](https://github.com/unios103/unios103.github.io/tree/oldPageOne)
 - [version2](https://github.com/unios103/unios103.github.io/tree/oldPageTwo)
 - [now](https://github.com/unios103/unios103.github.io)
+
+## Credits
+
+- [three.js](https://threejs.org/)
+- [NOISE!](https://github.com/josephg/noisejs) by Seph Gentle
