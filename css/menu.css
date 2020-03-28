@@ -1,3 +1,6 @@
+.mainContents {
+  opacity: 0;
+}
 .body_box {
   position: relative;
   background-color: #fafafa;
@@ -15,6 +18,7 @@
 }
 .loadChar {
   z-index: 101;
+  opacity: 0;
 }
 .menu_list {
   font-family: "Raleway";

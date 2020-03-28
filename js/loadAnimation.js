@@ -1,10 +1,42 @@
 var loadFlag = true;
 function loadAnimation() {
-  let that = this;
   this.loading = function() {
     var animCanvas = document.querySelector("#load");
-    var width = animCanvas.offsetWidth,
+
+    let loadCanvas = document.getElementById("cha");
+    let lts = loadCanvas.getContext("2d");
+
+    let div_home_w = window.innerWidth * devicePixelRatio;
+    let div_home_h = window.innerHeight * devicePixelRatio;
+
+    var isPortrait = false,
+      width,
+      height,
+      w,
+      h;
+
+    const canvasSize = () => {
+      if (window.innerHeight < window.innerWidth) {
+        loadCanvas.width = div_home_h * 2;
+        loadCanvas.height = div_home_h;
+      } else {
+        isPortrait = true;
+        loadCanvas.width = div_home_w * 2;
+        loadCanvas.height = div_home_w;
+      }
+
+      width = animCanvas.offsetWidth;
       height = animCanvas.offsetHeight;
+
+      if (isPortrait) {
+        w = window.innerWidth / 4;
+      } else {
+        w = window.innerHeight / 4;
+      }
+      h = w / 2;
+    };
+
+    canvasSize();
 
     var renderer = new THREE.WebGLRenderer({
       canvas: animCanvas,
@@ -27,7 +59,7 @@ function loadAnimation() {
 
     // ライト(平行光源)
     var light = new THREE.DirectionalLight(0xf77b97, 0.5);
-    light.position.set(200, 300, 400);
+    light.position.set(200, 300, 700);
     scene.add(light);
 
     // うにょうにょ
@@ -49,8 +81,47 @@ function loadAnimation() {
     var shape = new THREE.Mesh(geometry, material);
     scene.add(shape);
 
-    var s = 0;
-    function updateVertices() {
+    var texture_;
+
+    const loadingText = () => {
+      lts.fillStyle = "rgba(0, 0, 0, 0.0)";
+      lts.fillRect(0, 0, loadCanvas.width, loadCanvas.height);
+      lts.fillStyle = "#ffd1da";
+      lts.strokeStyle = "#ffd1da";
+      lts.textAlign = "center";
+      let append = 0;
+      if (navigator.userAgent.match(/(iPhone|iPod|Android)/i)) {
+        append += 100;
+      }
+      if (isPortrait) {
+        lts.font = loadCanvas.width / 6 + append + "px 'Sacramento'";
+      } else {
+        lts.font = loadCanvas.height / 2 + append + "px 'Sacramento'";
+      }
+      lts.fillText("Loading", loadCanvas.width / 2, loadCanvas.height / 2);
+      texture_ = new THREE.Texture(loadCanvas);
+      texture_.needsUpdate = true;
+      return texture_;
+    };
+
+    var textMaterial = new THREE.MeshPhongMaterial({
+      map: loadingText(),
+      side: THREE.DoubleSide,
+      transparent: true
+    });
+
+    textMaterial.magFilter = THREE.LinearFilter;
+
+    var textGeometry = new THREE.PlaneGeometry(w, h);
+    var textMesh = new THREE.Mesh(textGeometry, textMaterial);
+    scene.add(textMesh);
+    textMesh.position.x = width / 10;
+    textMesh.position.z = 100;
+    textMesh.rotation.x = Math.PI * 180;
+
+    var s = 1200,
+      frontFlag = false;
+    const updateVertices = () => {
       s += 20;
 
       for (let i = 0; i < geometry.vertices.length; i++) {
@@ -69,53 +140,39 @@ function loadAnimation() {
         vector.multiplyScalar(ratio);
       }
       geometry.verticesNeedUpdate = true;
-    }
 
-    function render() {
+      if (s % 2400 == 0) {
+        frontFlag = !frontFlag;
+      }
+      if (frontFlag) {
+        textMesh.rotation.x -= 0.006;
+      } else {
+        textMesh.rotation.x += 0.006;
+      }
+    };
+
+    const render = () => {
       let loadMate = requestAnimationFrame(render);
       updateVertices();
       renderer.render(scene, camera);
       if (!loadFlag) {
         cancelAnimationFrame(loadMate);
       }
-    }
+    };
 
-    function onResize() {
+    const onResize = () => {
       animCanvas.style.width = "";
       animCanvas.style.height = "";
-      width = animCanvas.offsetWidth;
-      height = animCanvas.offsetHeight;
+      canvasSize();
       camera.aspect = width / height;
       camera.updateProjectionMatrix();
       renderer.setSize(width, height);
-    }
+    };
 
     render();
 
-    var resizeTm;
-
     window.addEventListener("resize", function() {
-      resizeTm = clearTimeout(resizeTm);
-      resizeTm = setTimeout(onResize, 200);
+      onResize();
     });
-  };
-
-  this.loadChar = function() {
-    let loadCanvas = document.getElementById("cha");
-    let lts = loadCanvas.getContext("2d");
-    let div_home_w = window.innerWidth * devicePixelRatio;
-    let div_home_h = window.innerHeight * devicePixelRatio;
-    loadCanvas.width = div_home_w;
-    loadCanvas.height = div_home_h;
-    loadCanvas.style.width = String(loadCanvas.width / devicePixelRatio) + "px";
-    loadCanvas.style.height =
-      String(loadCanvas.height / devicePixelRatio) + "px";
-    let w = window.innerWidth;
-    let h = window.innerHeight;
-    lts.fillStyle = "#f77b97";
-    lts.textAlign = "center";
-    lts.font = w / 9 + "px 'Sacramento'";
-    console.log(lts.font);
-    lts.fillText("Loading", w, h);
   };
 }
