@@ -19,7 +19,7 @@ window.onload = function load() {
 const checkLoad = () => {
   let anim = requestAnimationFrame(checkLoad);
   let now = new Date();
-  if (time + 15 <= now.getSeconds()) {
+  if (time + 25 <= now.getSeconds()) {
     loadFlag = false;
   }
   if (!loadFlag) {
