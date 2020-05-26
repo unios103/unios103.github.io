@@ -109,12 +109,14 @@ function canvas_function() {
       String(canvas_home.width / devicePixelRatio) + "px";
     canvas_home.style.height =
       String(canvas_home.height / devicePixelRatio) + "px";
+
     canvas_hello.width = div_home_w;
     canvas_hello.height = div_home_h;
     canvas_hello.style.width =
       String(canvas_hello.width / devicePixelRatio) + "px";
     canvas_hello.style.height =
       String(canvas_hello.height / devicePixelRatio) + "px";
+
     window_size_w = window.innerWidth;
     window_size_h = window.innerHeight;
     img_size = div_home_w;
