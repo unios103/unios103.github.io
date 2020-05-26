@@ -1,0 +1,32 @@
+@import "color"
+$top-title-font: 2
+$title-font: 1.4
+$text-font: 1
+
+=wrapper-size
+  height: 100%
+  width: 100%
+
+=about-font($font-size: $text-font)
+  font-size: $font-size + rem
+  line-height: $font-size + 0.4 + rem
+
+=flex-direction-column
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+=flex-align-bottom
+  display: flex
+  align-items: baseline
+
+=title($font-size: $top-title-font)
+  margin: 0
+  +about-font($font-size)
+
+=link($font-size: $text-font)
+  +about-font($font-size)
+  color: $main-color
+  text-decoration: none
+  &:hover
+    text-decoration: underline
