@@ -6,9 +6,9 @@ import "./sass/global.sass";
 import "./sass/reset.sass";
 
 ReactDOM.hydrate(
-  <React.StrictMode>
-    <Page />
+  <>
     <Canvas />
-  </React.StrictMode>,
+    <Page />
+  </>,
   document.getElementById("root")
 );
