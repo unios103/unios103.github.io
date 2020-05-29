@@ -12,10 +12,10 @@ export const colorSet = {
 };
 
 export const rectData = {
-  size: [0.4, 0.2, 0.3, 0.15],
-  positionX: [0.05, -0.05, 0.2, 0.25],
-  positionY: [-0.05, 0.15, 0.5, 0.4],
-  rotate: [40, 25, 55, 10],
+  size: [0.6, 0.4, 0.15, 0.4, 0.1, 0.25, 0.3, 0.25],
+  positionX: [-0.05, -0.15, 0.6, 0.4, 0.7, 0.3, 0, 0.9],
+  positionY: [-0.15, 0.15, 0.45, 0.6, 0.5, 0.55, 0.9, 0.15],
+  rotate: [60, 25, 10, 55, 50, 20, 45, 60],
 };
 
 export type rectDataType = {

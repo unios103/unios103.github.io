@@ -11,16 +11,18 @@ const Canvas: React.FC = () => {
     return canvas.getContext("2d");
   };
   const determineTheSize = (canvas: HTMLCanvasElement) => {
-    canvas.width = window.innerWidth * devicePixelRatio;
     canvas.height = window.innerHeight * devicePixelRatio;
+    canvas.width = window.innerWidth * devicePixelRatio;
     canvas.style.width = String(canvas.width / devicePixelRatio) + "px";
     canvas.style.height = String(canvas.height / devicePixelRatio) + "px";
   };
-
-  useEffect(() => {
+  const draw = () => {
     const ctx: CanvasRenderingContext2D = getContext();
     const cvs = new drawing(ctx);
     cvs.stroke();
+  };
+  useEffect(() => {
+    draw();
   });
 
   return (
