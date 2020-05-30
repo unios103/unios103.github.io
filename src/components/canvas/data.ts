@@ -1,7 +1,7 @@
-export const windowSize = {
-  width: window.innerWidth * devicePixelRatio,
-  height: window.innerHeight * devicePixelRatio,
-};
+export class windowSize {
+  width = window.innerWidth * devicePixelRatio;
+  height = window.innerHeight * devicePixelRatio;
+}
 
 export const colorSet = {
   mainColor: "#eebbcb",

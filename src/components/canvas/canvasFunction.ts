@@ -20,6 +20,7 @@ class drawing {
         rectData.rotate[i]
       );
       this.strokeRect(size);
+      // console.log(size);
     }
     cvs.save();
   };
@@ -40,8 +41,9 @@ class drawing {
     size: number,
     rotate: number
   ): rectDataType => {
-    const width = windowSize.width;
-    const height = windowSize.height;
+    const displaySize = new windowSize();
+    const width = displaySize.width;
+    const height = displaySize.height;
     const strokeSize = height <= width ? height * size : width * size;
     const rad = (Math.PI / 180) * rotate;
     const x = width * positionX;
