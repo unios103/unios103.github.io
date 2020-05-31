@@ -23,15 +23,9 @@ const Canvas: React.FC = () => {
     const ctx: CanvasRenderingContext2D = getContext();
     const cvs = new drawing(ctx);
     cvs.stroke();
-    // requestAnimationFrame(() => {
-    //   draw();
-    // });
   };
   useEffect(() => {
     draw();
-    // requestAnimationFrame(() => {
-    //   draw();
-    // });
   });
 
   return (

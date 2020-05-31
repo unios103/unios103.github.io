@@ -7,7 +7,7 @@ class drawing {
 
   stroke = () => {
     const cvs: CanvasRenderingContext2D = this.ctx;
-    cvs.lineWidth = 2.4;
+    cvs.lineWidth = 2;
     cvs.strokeStyle = colorSet.brightSubColor;
     cvs.save();
     for (let i = 0; i < rectData.size.length; i++) {
@@ -20,7 +20,6 @@ class drawing {
         rectData.rotate[i]
       );
       this.strokeRect(size);
-      // console.log(size);
     }
     cvs.save();
   };
