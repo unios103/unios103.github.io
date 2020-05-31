@@ -3,8 +3,12 @@
 
 .home-wrapper
   padding: 2% 4rem
-  @media #{$isPhone}
-    padding: 3%
+  @media #{$is-phone}
+    padding: 5%
+  @media #{$large-screen-display}
+    max-width: 1200px
+    margin: 0 auto
+    padding: 2% 0
 
 .link
   &:hover

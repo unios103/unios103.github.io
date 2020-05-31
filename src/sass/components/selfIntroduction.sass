@@ -2,16 +2,22 @@
 @import "../variable/color"
 
 .intro-top
-  display: flex
+  +flex
   flex-wrap: wrap
   padding-top: 2%
 
-.description
-  width: 20rem
-  padding-right: 2rem
+.intro-top > * + *
+  padding-left: 2rem
 
-.icon
-  width: 20%
+.description
+  width: 15rem
+  background-color: $text-back
+
+.yoshi
+  max-height: 8rem
+
+.shun
+  max-height: 13rem
 
 .belongLinks > * + *
   margin-left: 0.3rem
