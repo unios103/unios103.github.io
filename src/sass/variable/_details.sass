@@ -1,44 +1,34 @@
 @import "color"
-$top-title-font: 2
-$title-font: 1.4
-$text-font: 1
-$min-font: 0.8
+$top-title-font: 2rem
+$title-font: 1.4rem
+$text-font: 1rem
+$min-font: 0.8rem
 $is-phone: "screen and (max-width: 600px)"
 $large-screen-display: "screen and (min-width: 1200px)"
+
+=transition
+  transition: 0.3s
 
 =wrapper-max-size
   height: 100%
   width: 100%
-
-=about-font($font-size: $text-font)
-  font-size: $font-size + rem
-  line-height: $font-size + 0.4 + rem
 
 =flex
   display: flex
   align-items: flex-start
 
 =flex-direction-column
-  display: flex
+  +flex
   flex-direction: column
-  align-items: flex-start
 
-=flex-align-bottom
-  display: flex
-  align-items: baseline
-
-=title($font-size: $top-title-font)
-  margin: 0
-  +about-font($font-size)
-
-=link($font-size: $text-font)
-  +about-font($font-size)
-  color: $main-color
-  text-decoration: none
-  &:hover
-    text-decoration: underline
+=flex-content-center
+  +flex
+  justify-content: center
 
 =contents-padding
-  padding-top: 1rem
+  padding-top: 1.5rem
   @media #{$is-phone}
-    padding-top: 1.5rem
+    padding-top: 2rem
+
+@function solid-border($thickness: 1px, $color: $main-color)
+  @return $thickness solid $color
