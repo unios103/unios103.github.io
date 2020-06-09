@@ -1,0 +1,28 @@
+@import "../../variable/details"
+@import "../../variable/color"
+
+.icons-wrapper
+  +flex
+  overflow-x: scroll
+  padding: 0.8rem 0
+
+.icon
+  max-width: 6rem
+  margin-left: 2rem
+  border-radius: $radius
+
+.icons-expo
+  @extend .icon
+  font-size: $min-font
+  border: solid-border($color: $bright-sub-color)
+  min-height: 6rem
+  min-width: 6rem
+  padding: 0.6rem
+
+.awesome-icon
+  margin-left: 0.3rem
+  margin-right: 0.8rem
+  max-width: 1rem
+
+.with-icon-wrapper
+  +flex

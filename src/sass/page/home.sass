@@ -1,20 +1,16 @@
 @import "../variable/color"
 @import "../variable/details"
-@import "../variable/components/text"
 
 .home-wrapper
   +flex-direction-column
   align-items: center
+  width: 70%
   padding: 3% 4rem
+  max-width: 800px
+  margin: 0 auto
   @media #{$is-phone}
+    width: 100%
     padding: 6%
+    padding-bottom: 10%
   @media #{$large-screen-display}
-    margin: 0 auto
-    max-width: 1200px
     padding: 2% 0
-
-.section-title
-  +text-buttom-margin
-
-.section-title-span
-  +section-title

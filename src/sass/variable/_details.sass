@@ -1,10 +1,13 @@
 @import "color"
+@import "./components/border"
+
 $top-title-font: 2rem
 $title-font: 1.4rem
 $text-font: 1rem
-$min-font: 0.8rem
+$min-font: 0.9rem
 $is-phone: "screen and (max-width: 600px)"
-$large-screen-display: "screen and (min-width: 1200px)"
+$large-screen-display: "screen and (min-width: 1500px)"
+$radius: 20%
 
 =transition
   transition: 0.3s
@@ -13,22 +16,27 @@ $large-screen-display: "screen and (min-width: 1200px)"
   height: 100%
   width: 100%
 
-=flex
+=flex($align: flex-start)
   display: flex
-  align-items: flex-start
+  align-items: $align
 
 =flex-direction-column
   +flex
   flex-direction: column
 
-=flex-content-center
-  +flex
-  justify-content: center
-
 =contents-padding
-  padding-top: 1.5rem
+  margin-top: 1.5rem
   @media #{$is-phone}
-    padding-top: 2rem
+    margin-top: 2rem
 
-@function solid-border($thickness: 1px, $color: $main-color)
-  @return $thickness solid $color
+=line-all
+  +line-style
+  +line-style(border-top, false)
+  border-left: solid-border()
+  border-right: solid-border()
+
+
+=list-style
+  +line-all
+  padding: 0.5rem 0.3rem 0.5rem calc( 1.5rem + 1px )
+  margin: 0.5rem 0

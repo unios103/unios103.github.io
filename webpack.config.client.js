@@ -1,10 +1,11 @@
 const path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+  .BundleAnalyzerPlugin;
 
 module.exports = {
   mode: "production",
   performance: {
-    hints: false,
     maxEntrypointSize: 512000,
     maxAssetSize: 512000,
   },
@@ -12,8 +13,8 @@ module.exports = {
   module: {
     rules: [
       {
-        loader: "ts-loader",
         test: /\.tsx?$/,
+        loader: "ts-loader",
         exclude: [/node_modules/],
         options: {
           configFile: "tsconfig.client.json",
@@ -61,4 +62,5 @@ module.exports = {
     path: path.resolve(process.cwd(), "dist"),
     publicPath: "/",
   },
+  plugins: [new BundleAnalyzerPlugin()],
 };

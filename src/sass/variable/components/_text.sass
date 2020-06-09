@@ -6,16 +6,7 @@
   line-height: $font-size + 0.4rem
 
 =section-title
-  position: relative
-  border-bottom: solid-border($color: $bright-sub-color)
-  &::after
-    content: " "
-    position: absolute
-    bottom: -1px
-    left: 0
-    width: 30%
-    display: block
-    border-bottom: solid-border()
+  +line-style
 
 =text-background
   background-color: $text-back

@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import Page from "./page/Home";
-import Canvas from "./components/Canvas";
+import Page from "./page/home";
+import Canvas from "./components/canvas";
 import "./sass/global.sass";
 import "./sass/reset.sass";
 
