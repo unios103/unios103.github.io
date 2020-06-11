@@ -1,11 +1,18 @@
 import * as React from "react";
 import { FC, ReactNode } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { IconProp } from "@fortawesome/fontawesome-svg-core/index";
 import "../../sass/components/details/icon.sass";
-import shun from "../../images/shun.jpg";
-import yoshi from "../../images/yoshi.jpg";
-import nasuru from "../../images/nasuru.jpg";
+import {
+  shun,
+  yoshi,
+  nasuru,
+  noise,
+  rabbit,
+  fluffy,
+  fox,
+  boy,
+} from "./importImg";
 
 type WithIconType = {
   children: ReactNode;
@@ -16,11 +23,21 @@ type IconNameType = {
 };
 
 export const IconsImg: FC = () => (
-  <div className="icons-wrapper">
-    <div className="icons-expo">直近の3枚です。見てください！！</div>
+  <div className="img-wrapper">
+    <div className="icons-expo"></div>
     <img src={yoshi} alt="yoshi’s icon" className="icon" />
     <img src={shun} alt="shun’s icon" className="icon" />
     <img src={nasuru} alt="nasuru’s icon" className="icon" />
+  </div>
+);
+
+export const WorksImg: FC = () => (
+  <div className="img-wrapper">
+    <img src={fluffy} alt="fluffy" className="works-images" />
+    <img src={noise} alt="noise" className="works-images" />
+    <img src={fox} alt="fox" className="works-images" />
+    <img src={rabbit} alt="rabbit" className="works-images" />
+    <img src={boy} alt="boy" className="works-images" />
   </div>
 );
 

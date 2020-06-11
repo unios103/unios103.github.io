@@ -6,12 +6,7 @@ import "../sass/components/canvas.sass";
 
 const Canvas: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const getContext = (): CanvasRenderingContext2D => {
-    const canvas: HTMLCanvasElement = canvasRef.current;
-    determineTheSize(canvas);
-    return canvas.getContext("2d");
-  };
-  const determineTheSize = (canvas: HTMLCanvasElement) => {
+  const determineTheSize = (canvas: HTMLCanvasElement): void => {
     const height = window.innerHeight;
     const width = window.innerWidth;
     canvas.width = width * devicePixelRatio;
@@ -19,7 +14,12 @@ const Canvas: React.FC = () => {
     canvas.style.width = String(canvas.width / devicePixelRatio) + "px";
     canvas.style.height = String(canvas.height / devicePixelRatio) + "px";
   };
-  const draw = () => {
+  const getContext = (): CanvasRenderingContext2D => {
+    const canvas: HTMLCanvasElement = canvasRef.current;
+    determineTheSize(canvas);
+    return canvas.getContext("2d");
+  };
+  const draw = (): void => {
     const ctx: CanvasRenderingContext2D = getContext();
     const cvs = new drawing(ctx);
     cvs.stroke();

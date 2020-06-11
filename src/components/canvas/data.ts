@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/class-name-casing */
 export class windowSize {
   width = window.innerWidth * devicePixelRatio;
   height = window.innerHeight * devicePixelRatio;

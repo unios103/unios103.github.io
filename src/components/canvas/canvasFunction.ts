@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/class-name-casing */
 import { windowSize, colorSet, rectData, rectDataType } from "./data";
 class drawing {
   ctx: CanvasRenderingContext2D;
@@ -5,7 +6,7 @@ class drawing {
     this.ctx = canvas;
   }
 
-  stroke = () => {
+  stroke = (): void => {
     const cvs: CanvasRenderingContext2D = this.ctx;
     cvs.lineWidth = 2;
     cvs.strokeStyle = colorSet.brightSubColor;
@@ -24,7 +25,7 @@ class drawing {
     cvs.save();
   };
 
-  strokeRect = ({ positionX, positionY, size, rotate }: rectDataType) => {
+  strokeRect = ({ positionX, positionY, size, rotate }: rectDataType): void => {
     const cvs: CanvasRenderingContext2D = this.ctx;
     cvs.save();
     cvs.translate(positionX + size * 0.5, positionY + size * 0.5);

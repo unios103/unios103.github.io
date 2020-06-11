@@ -1,23 +1,37 @@
 @import "../../variable/details"
 @import "../../variable/color"
 
-.icons-wrapper
+$icons-size: 6rem
+$radius: 50%
+
+.img-wrapper
   +flex
   overflow-x: scroll
   padding: 0.8rem 0
 
-.icon
-  max-width: 6rem
+.works-images
+  max-width: $icons-size
   margin-left: 2rem
+  +drop
+
+.icon
+  @extend .works-images
   border-radius: $radius
+  +drop
 
 .icons-expo
-  @extend .icon
-  font-size: $min-font
+  @extend .works-images
   border: solid-border($color: $bright-sub-color)
-  min-height: 6rem
-  min-width: 6rem
-  padding: 0.6rem
+  min-height: $icons-size
+  min-width: $icons-size
+  border-radius: $radius - 30%
+  overflow: hidden
+  position: relative
+  &::after
+    +center-position
+    content: "直近の3枚です。"
+    font-size: $min-font
+    text-align: center
 
 .awesome-icon
   margin-left: 0.3rem
