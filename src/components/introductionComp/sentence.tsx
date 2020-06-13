@@ -1,14 +1,10 @@
 import * as React from "react";
 import { faCode, faSchool, faPenNib } from "../details/importIcons";
-import SectionTitle from "../details/sectionTitle";
 import IconFont, { WithIconSentence } from "../details/icon";
+import SectionTitle from "../details/sectionTitle";
 import Link from "../details/link";
+import { approversSite, approvers, tech } from "../details/url";
 import "../../sass/components/introductionComp/sentence.sass";
-
-const approvers =
-  "https://twitter.com/search?q=%23限界開発鯖&src=recent_search_click";
-const tech = "https://twitter.com/search?q=%23kosen19s&src=typed_query";
-const approversSite = "https://approvers.dev";
 
 const Sentence: React.FC = () => (
   <div className="description">

@@ -5,7 +5,7 @@ import noise from "../../images/noise.png";
 import rabbit from "../../images/rabbit.png";
 import fluffy from "../../images/fluffy.png";
 import fox from "../../images/fox.png";
-import boy from "../../images/boy.png";
+import hello from "../../images/hello.png";
 import approvers from "../../images/approvers.jpg";
 import clock from "../../images/clock.png";
 
@@ -17,7 +17,7 @@ export {
   rabbit,
   fluffy,
   fox,
-  boy,
+  hello,
   approvers,
   clock,
 };

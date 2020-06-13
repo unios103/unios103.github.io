@@ -11,7 +11,7 @@ import {
   rabbit,
   fluffy,
   fox,
-  boy,
+  hello,
 } from "./importImg";
 
 type WithIconType = {
@@ -33,11 +33,11 @@ export const IconsImg: FC = () => (
 
 export const WorksImg: FC = () => (
   <div className="img-wrapper">
+    <img src={hello} alt="hello" className="works-images" />
     <img src={fluffy} alt="fluffy" className="works-images" />
     <img src={noise} alt="noise" className="works-images" />
     <img src={fox} alt="fox" className="works-images" />
     <img src={rabbit} alt="rabbit" className="works-images" />
-    <img src={boy} alt="boy" className="works-images" />
   </div>
 );
 

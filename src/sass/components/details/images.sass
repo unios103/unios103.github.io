@@ -2,10 +2,45 @@
 @import "../../variable/color"
 @import "../../variable/details"
 
+$padding: 2rem
+
+%works-expo-size
+  width: 50%
+  @media #{$is-phone}
+    width: 100%
+
 .img-section-wrapper
   margin-top: 0.5rem
 
+.works-img
+  padding: 0.8rem 0
+
+.works-img > * + *
+  padding-top: 0.8rem
+
+.works-web-section
+  +flex
+  padding-left: $padding
+  height: 12rem
+  width: 100%
+  @media #{$is-phone}
+    +flex-direction-column
+    padding: 0 $padding
+    height: auto
+
 .works-web
   +drop
-  margin-left: 2rem
-  max-width: calc( 50% - 2rem )
+  height: 100%
+  object-fit: contain
+  @extend %works-expo-size
+  @media #{$is-phone}
+    max-height: 10rem
+
+.works-expo
+  padding-left: $padding
+
+.works-expo-text
+  padding: 0.5rem $padding
+  @extend %works-expo-size
+  @media #{$is-phone}
+    padding: 1rem 0.5rem
