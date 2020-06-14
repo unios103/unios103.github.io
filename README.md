@@ -4,7 +4,7 @@
 
 [unios103.github.io](https://unios103.github.io)
 
-![hello](./src/images/helloMD.png)
+![hello](/src/images/helloMD.png)
 
 ## これまでに作成したページのコード
 
