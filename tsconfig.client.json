@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["types", "node_modules/@types"],
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react"
+  },
+  "exclude": ["src/server.tsx", "node_modules"],
+  "include": ["./src/**/*", "types/**/*"]
+}

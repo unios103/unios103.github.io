@@ -1,0 +1,24 @@
+@import "../variable/components/text"
+@import "../variable/details"
+
+.header
+  @media #{$is-phone}
+    padding-top: 1rem
+
+.header-title
+  +about-font($top-title-font)
+  position: relative
+  &::before
+    position: absolute
+    content: ""
+    z-index: -1
+    left: -2.8rem
+    width: 3rem
+    height: 3rem
+    background-color: #FDFAFB
+    border: solid-border()
+    transform: rotate(30deg)
+
+.my-name
+  text-align: left
+  +about-font($title-font)

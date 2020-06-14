@@ -1,0 +1,58 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2020": true
+  },
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "function-call-argument-newline": ["error", "consistent"],
+    "arrow-spacing": "error",
+    "max-len": [
+      "error",
+      {
+        "code": 100,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true
+      }
+    ],
+    "no-var": "error",
+    "prefer-arrow-callback": "error",
+    "semi-style": ["error", "last"],
+    "no-extra-semi": "error",
+    "no-unreachable": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": [
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "prettier/@typescript-eslint"
+      ],
+      "plugins": ["@typescript-eslint", "react"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+          "jsx": true
+        },
+        "project": ["./tsconfig.client.json"]
+      }
+    }
+  ]
+}

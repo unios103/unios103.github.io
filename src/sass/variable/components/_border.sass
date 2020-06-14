@@ -1,0 +1,27 @@
+@function solid-border($thickness: 1px, $color: $main-color)
+  @return $thickness solid $color
+
+=common
+  content: " "
+  position: absolute
+  width: 30%
+  display: block
+  border-bottom: solid-border()
+=before
+  &::before
+    +common
+    right: 0
+    top: -1px
+=after
+  &::after
+    +common
+    bottom: -1px
+    left: 0
+
+=line-style($border-pos: border-bottom, $add: true)
+  position: relative
+  #{$border-pos}: solid-border($color: $bright-sub-color)
+  @if $add
+    +after
+  @else
+    +before
