@@ -1,17 +1,16 @@
-# 開発する
+# unios103 の自己紹介
 
-`$ yarn build` と `$ yarn start` をそれぞれ別のターミナルで実行してください。それにより `./src` 以下のファイルが変更されたとき自動的にビルドされ、プロセスが再起動します。
+描いた絵とか、好きなこととか。
 
-## scripts
+[unios103.github.io](https://unios103.github.io)
 
-`$ yarn [...]`
+![hello](./src/images/helloMD.png)
 
-|        | 説明                                                                              |
-| :----: | :-------------------------------------------------------------------------------- |
-| ★build | `./src` , `./server` 以下のコードをビルドします。                                 |
-| ★start | 実行します。[http://localhost:3000](http://localhost:3000) を開くと表示されます。 |
-|  lint  | ESLint を実行します。                                                             |
-|  fix   | 警告を自動的に修正してくれます。                                                  |
-| ★sass  | css に変換します。基本的に使う必要はありません。                                  |
+## これまでに作成したページのコード
 
-★ がついているものはファイルの変更に応じて自動的に処理が行われます。
+以前のページとは大きくデザインを変更しました。
+
+- [version1](https://github.com/unios103/unios103.github.io/tree/oldPageOne)
+- [version2](https://github.com/unios103/unios103.github.io/tree/oldPageTwo)
+- [oldPageThree](https://github.com/unios103/unios103.github.io/tree/oldPageThree)
+- [now](https://github.com/unios103/unios103.github.io)
