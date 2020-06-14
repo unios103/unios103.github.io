@@ -1,6 +1,6 @@
 import * as React from "react";
 import { faPalette, faUserFriends, faLaptop } from "../details/importIcons";
-import { WithImgSection, WorksProgramming } from "../details/images";
+import { WithImgSection, WorksProgramming } from "../details/worksPrograming";
 import IconFont, {
   WithIconSentence,
   IconsImg,

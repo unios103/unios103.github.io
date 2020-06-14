@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FC, ReactNode } from "react";
 import Link from "./link";
-import { approvers, clock } from "../details/importImg";
+import { approvers, clock } from "./importImg";
 import { approversSite, approversSiteCode, approversAccount } from "./url";
 import "../../sass/components/details/images.sass";
 
@@ -15,25 +15,25 @@ export const WithImgSection: FC<childrenType> = ({
 
 export const WorksProgramming: FC = () => (
   <div className="works-img">
-    <div className="works-web-section">
+    <div className="works-web-section approvers">
       <img src={approvers} alt="approvers site" className="works-web" />
       <div className="works-expo-text">
-        <p>限界開発鯖の公式サイト</p>
+        <h4 className="works-expo-title">限界開発鯖の公式サイト</h4>
         <p>
           site : <Link link={approversSite}>approvers.dev</Link>
         </p>
         <p>
-          code : <Link link={approversSiteCode}>approvers.github.io</Link>
+          account : <Link link={approversAccount}>@UFIApprovers</Link>
         </p>
         <p>
-          account : <Link link={approversAccount}>@UFIApprovers</Link>
+          code : <Link link={approversSiteCode}>approvers.github.io</Link>
         </p>
       </div>
     </div>
     <div className="works-web-section">
       <img src={clock} alt="clock app" className="works-web" />
       <div className="works-expo-text">
-        <p>Clock App</p>
+        <h4 className="works-expo-title">Clock App</h4>
         <p>
           Canvas
           を使って作りました。サイズを変更可能にするなど、機能の改善をしていきたいです。

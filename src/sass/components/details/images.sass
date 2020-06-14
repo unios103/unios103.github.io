@@ -1,5 +1,5 @@
 @import "./icon"
-@import "../../variable/color"
+@import "../../variable/components/border"
 @import "../../variable/details"
 
 $padding: 2rem
@@ -28,6 +28,9 @@ $padding: 2rem
     padding: 0 $padding
     height: auto
 
+.approvers
+  padding-bottom: 0.8rem
+
 .works-web
   +drop
   height: 100%
@@ -44,3 +47,7 @@ $padding: 2rem
   @extend %works-expo-size
   @media #{$is-phone}
     padding: 1rem 0.5rem
+
+.works-expo-title
+  +line-style
+  margin-bottom: 0.3rem

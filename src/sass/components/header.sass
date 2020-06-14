@@ -1,6 +1,10 @@
 @import "../variable/components/text"
 @import "../variable/details"
 
+.header
+  @media #{$is-phone}
+    padding-top: 1rem
+
 .header-title
   +about-font($top-title-font)
   position: relative

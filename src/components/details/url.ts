@@ -5,3 +5,6 @@ export const approversSite = "https://approvers.dev";
 export const approversSiteCode =
   "https://github.com/approvers/approvers.github.io";
 export const approversAccount = "https://twitter.com/UFIApprovers";
+export const twitter = "https://twitter.com/unios103";
+export const instagram = "https://www.instagram.com/_unios103/";
+export const github = "https://github.com/unios103";

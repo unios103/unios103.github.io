@@ -9,7 +9,7 @@ $is-phone: "screen and (max-width: 600px)"
 $large-screen-display: "screen and (min-width: 1500px)"
 
 =transition
-  transition: 0.3s
+  transition: 0.2s
 
 =wrapper-max-size
   height: 100%
@@ -42,9 +42,10 @@ $large-screen-display: "screen and (min-width: 1500px)"
 
 =center-position
   position: absolute
+  content: ""
   top: 50%
   left: 0
   transform: translateY(-50%)
 
-=drop
-  filter: drop-shadow(-4px 4px 5px #ddd)
+=drop($color: #ddd)
+  filter: drop-shadow(-4px 4px 5px $color)

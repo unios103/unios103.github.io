@@ -1,0 +1,58 @@
+@import "../../variable/components/border"
+@import "../../variable/details"
+
+$radius: 25%
+=square($size: 3rem)
+  width: $size
+  height: $size
+
+.account-icon > path
+  color: #fff
+
+%account-icon-base
+  position: relative
+  border-bottom: none
+  border-radius: $radius
+  +drop
+  +square
+  &:hover
+    border-bottom: none
+    filter: brightness(110%)
+
+.instagram
+  @extend %account-icon-base
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat
+  overflow: hidden
+  &::before
+    content: ""
+    position: absolute
+    bottom: -1.9rem
+    left: -0.8rem
+    +square(3.6rem)
+    background: -webkit-radial-gradient(#ffd97d 10%, #ef653baa 55%, rgba(255, 88, 96, 0.1) 80%)
+    background: radial-gradient(#ffd97d 10%, #ef653baa 55%, rgba(255, 88, 96, 0.1) 80%)
+
+.twitter
+  @extend %account-icon-base
+  background-color: #1ca0f1
+
+.github
+  @extend %account-icon-base
+  background-color: #25292E
+
+.account-icon
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translateX(-50%) translateY(-50%)
+  z-index: 2
+  &-instagram
+    @extend .account-icon
+    font-size: 2.5rem
+  &-twitter
+    @extend .account-icon
+    font-size: 2rem
+  &-github
+    @extend .account-icon
+    font-size: 2.1rem

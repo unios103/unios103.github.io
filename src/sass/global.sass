@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap")
 @import "./variable/color"
 @import "./variable/details"
+@import "./variable/components/text"
 
 *
   font-family: YakuHanJP, 'Lato', "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
@@ -23,11 +24,14 @@ a
   &:hover
     border-bottom: solid-border($color: #0000)
 
-h1,h2,h3,h4,h5,h6
+h1,h2,h3
   text-align: center
 
+p
+  +about-font
+
 li
-  padding: 0.1rem 0
+  padding: 0.2rem 0
 
 ::selection
   background-color: rgba($bright-sub-color, 0.4)

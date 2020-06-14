@@ -7,7 +7,7 @@ import { approversSite, approvers, tech } from "../details/url";
 import "../../sass/components/introductionComp/sentence.sass";
 
 const Sentence: React.FC = () => (
-  <div className="description">
+  <div>
     <SectionTitle>こんにちは、unios103です。</SectionTitle>
     <p>
       お絵かきやプログラミング、笛を吹くことが好きな高専生です。普段は限界開発鯖（Discord鯖）の人たちと共同開発をしたり、勉強したりしています。
