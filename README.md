@@ -4,8 +4,6 @@
 
 [unios103.github.io](https://unios103.github.io)
 
-![hello](https://github.com/unios103/unios103.github.io/blob/master/src/images/helloMD.PNG)
-
 ## これまでに作成したページのコード
 
 以前のページとは大きくデザインを変更しました。
