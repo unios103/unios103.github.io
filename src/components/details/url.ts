@@ -6,5 +6,10 @@ export const approversSiteCode =
   "https://github.com/approvers/approvers.github.io";
 export const approversAccount = "https://twitter.com/UFIApprovers";
 export const twitter = "https://twitter.com/unios103";
+export const twitterI = "https://twitter.com/unios103i";
 export const instagram = "https://www.instagram.com/_unios103/";
 export const github = "https://github.com/unios103";
+export const use =
+  "https://twitter.com/unios103i/status/1275377164771155968?s=21";
+export const request =
+  "https://twitter.com/unios103i/status/1307105345177882625?s=21";

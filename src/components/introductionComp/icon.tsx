@@ -1,14 +1,19 @@
 import * as React from "react";
 import SectionTitle from "../details/sectionTitle";
+import Link from "../details/link";
+import { twitterI, use, request } from "../details/url";
 import "../../sass/components/introductionComp/icon.sass";
 
 const Icons: React.FC = () => (
   <div className="about-icon">
     <div className="icons-text">
       <SectionTitle>アイコン描きます。</SectionTitle>
-      <p>ご依頼・ご質問等があれば気軽にDM飛ばしてください！</p>
+      <p>
+        ご依頼・ご質問等があれば <Link link={twitterI}>@unios103i</Link>{" "}
+        まで気軽にDM飛ばしてください！
+      </p>
       <ul className="list">
-        <li>無償です。</li>
+        <li>0円〜 （金額はご自由にお決めください）</li>
         <li>人型に限りますが、表情・服装・配色等のリクエストは承ります。</li>
         <li>使用アプリは ibisPaint X になります。</li>
         <li>
@@ -16,7 +21,11 @@ const Icons: React.FC = () => (
         </li>
         <li>作成には1日〜2週間程度かかります。</li>
         <li>
-          お渡ししたイラストをTwitterやInstagram等で紹介する場合もあります。ご了承ください。
+          お渡ししたイラストはTwitterやInstagram等で紹介させていただきます。ご了承ください。
+        </li>
+        <li>
+          <Link link={use}>イラストの使用範囲について</Link>、
+          <Link link={request}>依頼について</Link> も併せてご覧ください。
         </li>
       </ul>
     </div>

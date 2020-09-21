@@ -25,7 +25,7 @@ const Sentence: React.FC = () => (
     </WithIconSentence>
     <WithIconSentence>
       <IconFont icon={faCode} />
-      <p>TypeScript・React・HTML (Canvas)・CSS (Sass)・Scala</p>
+      <p>TypeScript・React・CSS (Sass)・HTML (Canvas)・Go</p>
     </WithIconSentence>
     <WithIconSentence>
       <IconFont icon={faPenNib} />
