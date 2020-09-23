@@ -1,145 +1,145 @@
-body{
-    font-family: "M PLUS 1p";
-    font-size:26px;
-    color:#FFABCE;
-    line-height: 1.5;
-    margin-left:28px;
-    margin-bottom:0px;
-    text-align: center;
-    background: -moz-linear-gradient(left, #FFF 70%,#FFD5EC);
-    background: -webkit-linear-gradient(left, #FFF 70%,#FFD5EC	);
-    background: linear-gradient(to right,  #FFF 70%,#FFD5EC	);
+body {
+  font-family: "M PLUS 1p";
+  font-size: 26px;
+  color: #ffabce;
+  line-height: 1.5;
+  margin-left: 28px;
+  margin-bottom: 0px;
+  text-align: center;
+  background: -moz-linear-gradient(left, #fff 70%, #ffd5ec);
+  background: -webkit-linear-gradient(left, #fff 70%, #ffd5ec);
+  background: linear-gradient(to right, #fff 70%, #ffd5ec);
 }
-header{
-    height: 60px;
-    margin-top:0px;
-    background-color:white;
+header {
+  height: 60px;
+  margin-top: 0px;
+  background-color: white;
 }
-.list a{
-    font-family: 'Kite One', sans-serif;
-    font-size:30px;
-    color:#FFABCE;
-    float :left;
-    height: 60px;
-    padding:10px 10px;
-    text-decoration:none; 
-    margin-right:50px;
-    letter-spacing: 0.07em;
+.list a {
+  font-family: "Kite One", sans-serif;
+  font-size: 30px;
+  color: #ffabce;
+  float: left;
+  height: 60px;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin-right: 50px;
+  letter-spacing: 0.07em;
 }
-.list a:hover{
-    color:#FFABCE;
-    text-decoration:underline;
+.list a:hover {
+  color: #ffabce;
+  text-decoration: underline;
 }
-.twit img{
-    float:right;
-    margin:16px;
-    height: 28px;
-    width:28px;
+.twit img {
+  float: right;
+  margin: 16px;
+  height: 28px;
+  width: 28px;
 }
-.twit a:hover img{
-    filter: alpha(opacity=80);
-    -moz-opacity: 0.8;
-    opacity: 0.8;
-    border: solid rgba(248, 185, 211, 0.774) 1px;
+.twit a:hover img {
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  border: solid rgba(248, 185, 211, 0.774) 1px;
 }
-.icon img{
-    margin-top:20px;
-    float:left;
-    width:43%;
-    height:43%;
-    border-radius:30px;
+.icon img {
+  margin-top: 20px;
+  float: left;
+  width: 43%;
+  height: 43%;
+  border-radius: 30px;
 }
 section h1 {
-    clear:left;
-    text-align: center;
-    color:#FF5192;
-    font-family: 'Josefin Slab', serif;
-    letter-spacing: 0.05em;
-    margin-bottom:10px;
-    margin-top:15px;
-    font-size:70px;
+  clear: left;
+  text-align: center;
+  color: #ff5192;
+  font-family: "Josefin Slab", serif;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-size: 70px;
 }
-.pro{
-    float: left;
+.pro {
+  float: left;
 }
-.top{
-    padding-left:20px;
-    color:#FF69A3;
+.top {
+  padding-left: 20px;
+  color: #ff69a3;
 }
-.pro2{
-    float:left;
-    text-align: left;
-    padding-left:20px;
-    margin-left:0px;
+.pro2 {
+  float: left;
+  text-align: left;
+  padding-left: 20px;
+  margin-left: 0px;
 }
-.pro2 a{
-    color:#FF69A3;
-    text-decoration:none;
+.pro2 a {
+  color: #ff69a3;
+  text-decoration: none;
 }
-.pro2 a:hover{
-    color:#FFABCE;
-    text-decoration:underline;
+.pro2 a:hover {
+  color: #ffabce;
+  text-decoration: underline;
 }
 .study .obenn {
-    text-align:center;
+  text-align: center;
 }
-.study p{
-    clear:left;
-    text-align: left;
-    padding-left:20px;
+.study p {
+  clear: left;
+  text-align: left;
+  padding-left: 20px;
 }
-.study span{
-    color:#FF5192;
-    font-size: 29px;
-    letter-spacing: 0.05em;
+.study span {
+  color: #ff5192;
+  font-size: 29px;
+  letter-spacing: 0.05em;
 }
-.language{
-    color:#FF69A3;
-    padding:3px 10px;
-    border-left: 15px solid #FF69A3;
+.language {
+  color: #ff69a3;
+  padding: 3px 10px;
+  border-left: 15px solid #ff69a3;
 }
-.language span{
-    background:#FFBEDA;
-    font-size:25px;
-    color:white;
-    padding:0px 10px;
-    border-radius: 20px;
-    font-family: 'Avenir','Arial';
+.language span {
+  background: #ffbeda;
+  font-size: 25px;
+  color: white;
+  padding: 0px 10px;
+  border-radius: 20px;
+  font-family: "Avenir", "Arial";
 }
-.end{
-    border-top:dashed 2px #FFABCE;
-    color:#FF5192;
-    margin-bottom:30px;
+.end {
+  border-top: dashed 2px #ffabce;
+  color: #ff5192;
+  margin-bottom: 30px;
 }
-footer{
-    height: 50px;
-    margin-bottom:0px;
-    background-color:white;
+footer {
+  height: 50px;
+  margin-bottom: 0px;
+  background-color: white;
 }
-.list a{
-    font-family: 'Kite One', sans-serif;
-    font-size:20px;
-    color:#FFABCE;
-    float :left;
-    height: 50px;
-    padding:15px 15px;
-    text-decoration:none; 
-    margin-right:50px;
-    letter-spacing: 0.05em;
+.list a {
+  font-family: "Kite One", sans-serif;
+  font-size: 20px;
+  color: #ffabce;
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  text-decoration: none;
+  margin-right: 50px;
+  letter-spacing: 0.05em;
 }
-footer .list a:hover{
-    color:#FFABCE;
-    text-decoration:underline;
+footer .list a:hover {
+  color: #ffabce;
+  text-decoration: underline;
 }
-footer .twit img{
-    float:right;
-    margin:14px;
-    height:20px;
-    width:20px;
+footer .twit img {
+  float: right;
+  margin: 14px;
+  height: 20px;
+  width: 20px;
 }
-footer .twit a:hover img{
-    filter: alpha(opacity=80);
-    -moz-opacity: 0.8;
-    opacity: 0.8;
-    border: solid rgba(248, 185, 211, 0.774) 1px;
+footer .twit a:hover img {
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  border: solid rgba(248, 185, 211, 0.774) 1px;
 }
