@@ -4,11 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config webpack.config.client.js --watch",
+    "build": "webpack --config webpack.config.client.js",
+    "dev": "webpack-dev-server --config webpack.config.client.js --open",
     "lint": "eslint src/ --ext .ts,.tsx",
-    "server:lint": "eslint ./server/**/*",
-    "fix": "yarn lint --fix",
-    "sass": "node-sass src/sass/ --output src/css/ --output-style compressed --watch --source-map true"
+    "fix": "yarn lint --fix"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
@@ -54,6 +53,7 @@
     "url-loader": "^4.1.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
     "webpack-node-externals": "^1.7.2"
   }
 }

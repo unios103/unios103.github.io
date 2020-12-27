@@ -1,6 +1,7 @@
 const path = require("path");
 const fiber = require("fibers");
 const TerserPlugin = require("terser-webpack-plugin");
+const outputPath = path.resolve(__dirname);
 
 module.exports = {
   mode: "production",
@@ -76,5 +77,8 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(process.cwd(), "dist"),
     publicPath: "/",
+  },
+  devServer: {
+    contentBase: outputPath,
   },
 };
