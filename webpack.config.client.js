@@ -1,5 +1,5 @@
 const path = require("path");
-const Fiber = require("fibers");
+const fiber = require("fibers");
 const TerserPlugin = require("terser-webpack-plugin");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
@@ -10,7 +10,7 @@ module.exports = {
     maxEntrypointSize: 512000,
     maxAssetSize: 512000,
   },
-  entry: "./src/main.tsx",
+  entry: "./src/Main.tsx",
   module: {
     rules: [
       {
@@ -34,7 +34,9 @@ module.exports = {
             loader: "sass-loader",
             options: {
               implementation: require("sass"),
-              fiber: Fiber,
+              sassOptions: {
+                fiber: fiber,
+              },
             },
           },
         ],

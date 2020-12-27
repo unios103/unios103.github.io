@@ -51,7 +51,7 @@
         "ecmaFeatures": {
           "jsx": true
         },
-        "project": ["./tsconfig.client.json"]
+        "project": ["./tsconfig.json"]
       }
     }
   ]

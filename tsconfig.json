@@ -8,6 +8,6 @@
     "target": "es5",
     "jsx": "react"
   },
-  "exclude": ["src/server.tsx", "node_modules"],
+  "exclude": ["node_modules"],
   "include": ["./src/**/*", "types/**/*"]
 }
