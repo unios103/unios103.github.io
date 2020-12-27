@@ -1,8 +1,6 @@
 const path = require("path");
 const fiber = require("fibers");
 const TerserPlugin = require("terser-webpack-plugin");
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
-  .BundleAnalyzerPlugin;
 
 module.exports = {
   mode: "production",
@@ -79,5 +77,4 @@ module.exports = {
     path: path.resolve(process.cwd(), "dist"),
     publicPath: "/",
   },
-  plugins: [new BundleAnalyzerPlugin()],
 };
