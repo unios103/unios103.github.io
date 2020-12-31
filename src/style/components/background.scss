@@ -1,0 +1,22 @@
+@mixin line-style {
+  @apply absolute top-0 h-full transform translate-x-m50 skew-x-m50;
+  background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
+}
+
+.background {
+  z-index: -1;
+  @apply fixed bg-white-background2 h-full w-full;
+
+  .line {
+    @include line-style;
+    @apply left-1/2 w-20;
+  }
+
+  .symmetry {
+    @apply right-1/2 w-6 transform translate-x-m50 skew-x-50;
+  }
+
+  .thin {
+    @apply left-1/4 w-6;
+  }
+}

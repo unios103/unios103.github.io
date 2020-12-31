@@ -1,3 +1,12 @@
+@use '../mediaqueries';
+
 .main {
-  @apply bg-blue-400;
+  backdrop-filter: blur(10px);
+  @apply relative top-0 left-1/2 transform translate-x-m50 p-8 mt-8 rounded-3xl bg-white-background border border-white-border inline-block bg-clip-border shadow-md w-3/4 max-w-screen-md;
+}
+
+@include mediaqueries.smartphone {
+  .main {
+    @apply w-11/12 p-24 pb-40;
+  }
 }
