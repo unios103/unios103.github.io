@@ -7,12 +7,6 @@
   @apply w-full;
 }
 
-@include mediaqueries.smartphone {
-  .accounts {
-    @include wrapper.wrapper_media;
-  }
-}
-
 .accounts-icon-wrapper {
   @apply flex items-start justify-center my-2 mx-0;
 }
@@ -23,4 +17,10 @@
 
 .follow-me {
   @apply text-center;
+}
+
+@include mediaqueries.smartphone {
+  .accounts {
+    @include wrapper.wrapper_media;
+  }
 }

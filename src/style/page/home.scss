@@ -14,9 +14,10 @@
 @include mediaqueries.smartphone {
   .main {
     @apply w-11/12;
-  }
-  .contents {
-    @include wrapper.wrapper_media;
+
+    .contents {
+      @include wrapper.wrapper_media;
+    }
   }
 }
 
