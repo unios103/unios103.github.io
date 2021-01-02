@@ -1,0 +1,27 @@
+@use '../wrapper';
+@use '../mediaqueries';
+
+.header {
+  @include wrapper.wrapper;
+  @apply bg-white-2 rounded-t-2xl;
+
+  .title,
+  .sub {
+    @apply text-center;
+  }
+
+  .title {
+    @apply text-2xl;
+  }
+
+  .sub {
+    @apply text-lg;
+  }
+}
+
+@include mediaqueries.smartphone {
+  .header {
+    @include wrapper.wrapper_media;
+    @apply w-full;
+  }
+}

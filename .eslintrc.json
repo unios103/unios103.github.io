@@ -28,7 +28,8 @@
     "prefer-arrow-callback": "error",
     "semi-style": ["error", "last"],
     "no-extra-semi": "error",
-    "no-unreachable": "error"
+    "no-unreachable": "error",
+    "react/prop-types": "ignore"
   },
   "settings": {
     "react": {

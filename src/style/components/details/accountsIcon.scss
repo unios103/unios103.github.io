@@ -1,0 +1,63 @@
+@mixin drop($color: #ddd) {
+  @apply shadow-md;
+}
+
+@mixin square {
+  @apply h-12 w-12;
+}
+
+.account-icon > path {
+  @apply text-white-3;
+}
+
+@mixin account-icon-base {
+  @apply relative border-b-0 rounded-xl;
+  @include drop;
+  @include square;
+  &:hover {
+    @apply border-b-0;
+    filter: brightness(110%);
+  }
+}
+
+.instagram {
+  @include account-icon-base;
+  @apply overflow-hidden;
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  &::before {
+    content: "";
+    @apply absolute h-14 w-14;
+    bottom: -1.9rem;
+    left: -0.8rem;
+    background: -webkit-radial-gradient(
+      #ffd97d 10%,
+      #ef653baa 55%,
+      rgba(255, 88, 96, 0.1) 80%
+    );
+    background: radial-gradient(
+      #ffd97d 10%,
+      #ef653baa 55%,
+      rgba(255, 88, 96, 0.1) 80%
+    );
+  }
+}
+
+.twitter {
+  @include account-icon-base;
+  background-color: #1ca0f1;
+}
+
+.github {
+  @include account-icon-base;
+  background-color: #25292e;
+}
+
+.account-icon {
+  @apply text-white-3 absolute top-1/2 left-1/2 transform translate-x-m50 translate-y-m50 z-10;
+  @apply h-8 w-8 #{!important};
+}
+
+.instagram .account-icon {
+  @apply h-9 w-9 #{!important};
+}

@@ -4,7 +4,7 @@ module.exports = {
     require("tailwindcss"),
     require("autoprefixer"),
     purgecss({
-      content: ["./**/*.html"],
+      content: ["./**/*.html", "./src/**/*.tsx"],
     }),
   ],
 };

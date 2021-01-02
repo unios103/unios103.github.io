@@ -1,0 +1,26 @@
+@use '../../wrapper';
+@use '../../mediaqueries';
+
+.accounts {
+  @include wrapper.wrapper;
+  @include wrapper.glass;
+  @apply w-full;
+}
+
+@include mediaqueries.smartphone {
+  .accounts {
+    @include wrapper.wrapper_media;
+  }
+}
+
+.accounts-icon-wrapper {
+  @apply flex items-start justify-center my-2 mx-0;
+}
+
+.accounts-icon-wrapper > * + * {
+  @apply ml-8;
+}
+
+.follow-me {
+  @apply text-center;
+}

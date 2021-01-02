@@ -1,0 +1,14 @@
+@use './mediaqueries';
+
+@mixin wrapper {
+  @apply p-8;
+}
+
+@mixin wrapper_media {
+  @apply p-6;
+}
+
+@mixin glass {
+  backdrop-filter: blur(7px);
+  @apply rounded-2xl bg-white-1 border border-white-0 inline-block bg-clip-border shadow-md;
+}

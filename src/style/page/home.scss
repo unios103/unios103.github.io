@@ -1,12 +1,25 @@
 @use '../mediaqueries';
+@use '../wrapper';
 
 .main {
-  backdrop-filter: blur(10px);
-  @apply relative top-0 left-1/2 transform translate-x-m50 p-8 mt-8 rounded-3xl bg-white-background border border-white-border inline-block bg-clip-border shadow-md w-3/4 max-w-screen-md;
+  @include wrapper.glass;
+  @apply relative top-0 pb-8 left-1/2 transform translate-x-m50 mt-8 w-3/4 max-w-screen-md;
+
+  .contents {
+    @apply flex;
+    @include wrapper.wrapper;
+  }
 }
 
 @include mediaqueries.smartphone {
   .main {
-    @apply w-11/12 p-24 pb-40;
+    @apply w-11/12;
   }
+  .contents {
+    @include wrapper.wrapper_media;
+  }
+}
+
+.section-title {
+  @apply text-xl text-center;
 }

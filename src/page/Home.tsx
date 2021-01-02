@@ -1,10 +1,15 @@
 import * as React from "react";
+import Header from "../components/Header";
+import Account from "../components/introduction/accounts";
 
 import "../style/page/home.scss";
 
 const Page: React.FC = () => (
   <div className="main">
-    <h1>蒸発するさかな</h1>
+    <Header />
+    <div className="contents">
+      <Account />
+    </div>
   </div>
 );
 
