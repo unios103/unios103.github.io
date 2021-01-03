@@ -1,7 +1,7 @@
 import * as React from "react";
 import SectionTitle from "../details/sectionTitle";
 import Link from "../details/link";
-import { twitterI, use, request } from "../details/url";
+import { twitterI, use } from "../details/url";
 import "../../sass/components/introductionComp/icon.sass";
 
 const Icons: React.FC = () => (
@@ -15,7 +15,6 @@ const Icons: React.FC = () => (
       <ul className="list">
         <li>0円〜 （金額はご自由にお決めください）</li>
         <li>人型に限りますが、表情・服装・配色等のリクエストは承ります。</li>
-        <li>使用アプリは ibisPaint X になります。</li>
         <li>
           色鉛筆で描くことも可能です。こちらをご希望の際はお伝えください。
         </li>
@@ -24,8 +23,8 @@ const Icons: React.FC = () => (
           お渡ししたイラストはTwitterやInstagram等で紹介させていただきます。ご了承ください。
         </li>
         <li>
-          <Link link={use}>イラストの使用範囲について</Link>、
-          <Link link={request}>依頼について</Link> も併せてご覧ください。
+          <Link link={use}>イラストの使用範囲について</Link>{" "}
+          を併せてご覧ください。
         </li>
       </ul>
     </div>
