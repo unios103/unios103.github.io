@@ -11,3 +11,7 @@ export const instagram = "https://www.instagram.com/unios103i/";
 export const github = "https://github.com/unios103";
 export const use =
   "https://twitter.com/unios103i/status/1275377164771155968?s=21";
+export const canvasClock = "https://github.com/unios103/canvas_clock";
+export const provinDevs = "https://github.com/ProvinDevs/2020frontend";
+export const daily = "https://cocoda.design/daily-products/27512";
+export const cocoda = "https://cocoda.design/unios103";

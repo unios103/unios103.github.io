@@ -13,6 +13,7 @@ import unios1032 from "../../images/unios1032.png";
 import approvers from "../../images/approvers.jpg";
 import clock from "../../images/clock.png";
 import great from "../../images/Great.png";
+import provinDevs from "../../images/ProvinDevs.jpg";
 
 export const IconI = [shun, yoshi, loxy, mirror, pc];
 export const Illustration = [
@@ -26,4 +27,5 @@ export const Work = {
   approvers: approvers,
   clock: clock,
   great: great,
+  provinDevs: provinDevs,
 };

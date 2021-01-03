@@ -24,7 +24,7 @@ const Works: React.FC = () => (
     <WithImgSection>
       <WithIconSentence>
         <IconFont icon={faLaptop} />
-        <p>これまでに作成したもの。</p>
+        <p>これまでに作成したもの。（一部抜粋）</p>
       </WithIconSentence>
       <WorksProgramming />
     </WithImgSection>
