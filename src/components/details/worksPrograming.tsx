@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FC, ReactNode } from "react";
 import Link from "./link";
-import { approvers, clock } from "./importImg";
+import { Work } from "./importImg";
 import { approversSite, approversSiteCode, approversAccount } from "./url";
 import "../../sass/components/details/images.sass";
 
@@ -16,7 +16,7 @@ export const WithImgSection: FC<childrenType> = ({
 export const WorksProgramming: FC = () => (
   <div className="works-img">
     <div className="works-web-section approvers">
-      <img src={approvers} alt="approvers site" className="works-web" />
+      <img src={Work.approvers} alt="approvers site" className="works-web" />
       <div className="works-expo-text">
         <h4 className="works-expo-title">限界開発鯖の公式サイト</h4>
         <p>
@@ -31,7 +31,7 @@ export const WorksProgramming: FC = () => (
       </div>
     </div>
     <div className="works-web-section">
-      <img src={clock} alt="clock app" className="works-web" />
+      <img src={Work.clock} alt="clock app" className="works-web" />
       <div className="works-expo-text">
         <h4 className="works-expo-title">Clock App</h4>
         <p>
