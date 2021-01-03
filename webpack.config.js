@@ -1,7 +1,6 @@
 const path = require("path");
+const fiber = require("fibers");
 const TerserPlugin = require("terser-webpack-plugin");
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
-  .BundleAnalyzerPlugin;
 
 module.exports = {
   mode: "production",
@@ -19,7 +18,26 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [
+          {
+            loader: "style-loader",
+          },
+          {
+            loader: "css-loader",
+          },
+          {
+            loader: "postcss-loader",
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              implementation: require("sass"),
+              sassOptions: {
+                fiber: fiber,
+              },
+            },
+          },
+        ],
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -59,5 +77,4 @@ module.exports = {
     path: path.resolve(process.cwd(), "dist"),
     publicPath: "/",
   },
-  plugins: [new BundleAnalyzerPlugin()],
 };
