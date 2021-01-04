@@ -16,13 +16,17 @@ const Loading: FC = () => (
 );
 
 const IsLoading: FC = () => {
-  // useEffectOnce(() => {
-  //   const timer = setInterval(() => {}, 20);
-  //   return () => {
-  //     clearInterval(timer);
-  //   };
-  // });
-  return <Loading />;
+  const [isEnd, setIsEnd] = useState(false);
+
+  useEffectOnce(() => {
+    setTimeout(() => {
+      setIsEnd(true);
+    }, 4 * 1000);
+  });
+
+  const Load = isEnd ? <></> : <Loading />;
+
+  return <>{Load}</>;
 };
 
 export default IsLoading;
