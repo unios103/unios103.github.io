@@ -1,11 +1,8 @@
 import * as React from "react";
 import { faPalette, faUserFriends, faLaptop } from "../details/importIcons";
 import { WithImgSection, WorksProgramming } from "../details/worksPrograming";
-import IconFont, {
-  WithIconSentence,
-  IconsImg,
-  WorksImg,
-} from "../details/icon";
+import IconFont, { WithIconSentence, IconsImg } from "../details/icon";
+import { IconI, Illustration } from "../details/importImg";
 import SectionTitle from "../details/sectionTitle";
 import "../../sass/components/introductionComp/works.sass";
 
@@ -14,20 +11,20 @@ const Works: React.FC = () => (
     <SectionTitle>作ったもの。描いたもの。</SectionTitle>
     <WithIconSentence>
       <IconFont icon={faUserFriends} />
-      <p>これまでに7枚のアイコンイラストを描かせていただきました。</p>
+      <p>アイコンイラストを描かせていただきました。</p>
     </WithIconSentence>
-    <IconsImg />
+    <IconsImg image={IconI} alt="icon" />
     <WithImgSection>
       <WithIconSentence>
         <IconFont icon={faPalette} />
-        <p>女の子をよく描きます。（使用アプリ： ibisPaint X）</p>
+        <p>女の子をよく描いています。</p>
       </WithIconSentence>
-      <WorksImg />
+      <IconsImg image={Illustration} alt="Illustration" />
     </WithImgSection>
     <WithImgSection>
       <WithIconSentence>
         <IconFont icon={faLaptop} />
-        <p>これまでに作成したアプリ・サイトなど</p>
+        <p>これまでに作成したもの。（一部抜粋）</p>
       </WithIconSentence>
       <WorksProgramming />
     </WithImgSection>

@@ -9,29 +9,11 @@ $radius: 50%
   overflow-x: scroll
   padding: 0.8rem 0
 
-.works-images
+.icon
   max-width: $icons-size
   margin-left: 2rem
-  +drop
-
-.icon
-  @extend .works-images
   border-radius: $radius
   +drop
-
-.icons-expo
-  @extend .works-images
-  border: solid-border($color: $bright-sub-color)
-  min-height: $icons-size
-  min-width: $icons-size
-  border-radius: $radius - 30%
-  overflow: hidden
-  position: relative
-  &::after
-    +center-position
-    content: "直近の3枚です。"
-    font-size: $min-font
-    text-align: center
 
 .awesome-icon
   margin-left: 0.3rem

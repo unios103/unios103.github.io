@@ -1,0 +1,54 @@
+@use "../variable/color"
+
+@keyframes rotation
+  0%
+    transform: rotate(0)
+  100%
+    transform: rotate(360deg)
+
+@keyframes transparency
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+    z-index: -3
+
+=square($size)
+  width: #{$size}
+  height: #{$size}
+
+=center
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+=anim($time)
+  animation: $time linear 0s infinite normal none running rotation
+
+.loading
+  height: 100vh
+  width: 100%
+  background-color: color.$basis-color
+  position: fixed
+  overflow: hidden
+  animation: transparency 0.5s ease-in-out 4s both
+  z-index: 10
+  .outer
+    +square(12rem)
+    +center
+    position: absolute
+    .text
+      +center
+      position: absolute
+      font-family: sans-serif
+    .child
+      +square(100%)
+      position: absolute
+      top: 0
+      border: 1px solid color.$sub-color
+      @for $var from 1 through 3
+        &:nth-child(#{$var})
+          $time: 4 + $var - 1
+          +anim(#{$time}s)
+          @if $var == 3
+            border-color: color.$bright-sub-color
