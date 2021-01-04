@@ -6,6 +6,13 @@
   100%
     transform: rotate(360deg)
 
+@keyframes transparency
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+    z-index: -3
+
 =square($size)
   width: #{$size}
   height: #{$size}
@@ -24,6 +31,7 @@
   background-color: color.$basis-color
   position: fixed
   overflow: hidden
+  animation: transparency 0.5s ease-in-out 4s both
   z-index: 10
   .outer
     +square(12rem)

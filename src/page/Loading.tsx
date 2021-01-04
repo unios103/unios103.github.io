@@ -1,6 +1,5 @@
 import * as React from "react";
-import { FC, useState } from "react";
-import { useEffectOnce } from "react-use";
+import { FC } from "react";
 
 import "../sass/page/loading.sass";
 
@@ -15,18 +14,4 @@ const Loading: FC = () => (
   </div>
 );
 
-const IsLoading: FC = () => {
-  const [isEnd, setIsEnd] = useState(false);
-
-  useEffectOnce(() => {
-    setTimeout(() => {
-      setIsEnd(true);
-    }, 4 * 1000);
-  });
-
-  const Load = isEnd ? <></> : <Loading />;
-
-  return <>{Load}</>;
-};
-
-export default IsLoading;
+export default Loading;
