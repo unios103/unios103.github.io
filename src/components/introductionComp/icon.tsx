@@ -7,14 +7,14 @@ import "../../sass/components/introductionComp/icon.sass";
 const Icons: React.FC = () => (
   <div className="about-icon">
     <div className="icons-text">
-      <SectionTitle>アイコン描きます。</SectionTitle>
+      <SectionTitle>アイコン・ヘッダー描きます。</SectionTitle>
       <p>
         ご依頼・ご質問等があれば <Link link={twitterI}>@unios103i</Link>{" "}
         まで気軽にDM飛ばしてください！
       </p>
       <ul className="list">
         <li>0円〜 （金額はご自由にお決めください）</li>
-        <li>人型に限りますが、表情・服装・配色等のリクエストは承ります。</li>
+        <li>人に限りますが、表情・服装・配色等のリクエストは承ります。</li>
         <li>
           色鉛筆で描くことも可能です。こちらをご希望の際はお伝えください。
         </li>
