@@ -11,7 +11,7 @@ const Works: React.FC = () => (
     <SectionTitle>作ったもの。描いたもの。</SectionTitle>
     <WithIconSentence>
       <IconFont icon={faUserFriends} />
-      <p>アイコンイラストを描かせていただきました。</p>
+      <p>アイコン・ヘッダーのイラストを描かせていただきました。</p>
     </WithIconSentence>
     <IconsImg image={IconI} alt="icon" />
     <WithImgSection>
