@@ -1,7 +1,7 @@
 import rabbit from "../../images/rabbit.jpg";
 import chocolate from "../../images/chocolate.jpg";
 import flower from "../../images/flower.jpg";
-import shun from "../../images/shun.jpg";
+import shun from "../../images/shun1.jpg";
 import mirror from "../../images/mirror.jpg";
 
 import ponytail from "../../images/ponytail.jpg";
